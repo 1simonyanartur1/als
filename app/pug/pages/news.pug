@@ -1,0 +1,80 @@
+- var imgUrl = '../img/';
+  
+doctype
+html
+	include ../blocks/head.pug
+		title АЛС
+	body
+		include ../blocks/header2.pug
+
+		.page-container
+			section.heading(style="background: url(../img/heading/news.jpg) no-repeat center center / cover;")
+				.container
+					h1.heading__title Новости
+					h2.heading__bgtitle Новости
+				.breadcrumbs
+					.container
+						ul
+							li
+								a(href="#") Главная
+							li
+								a(href="#") Новости
+
+			section.news
+				.container
+					.year
+						p.year__title Выбрать год: <span>2020</span>
+						ul.year-list
+							li(data-year="2019") 2019
+							li(data-year="2020") 2020
+							li(data-year="2021") 2021
+					.inner(data-year="2020")
+						.item
+							img.item__img(src=imgUrl+"news/img2.jpg", alt="")
+							.item-inner
+								p.item__date 22. 06. 2019
+								.item__line
+								p.item__text Китай стремительно ворвался в двадцатку лидеров; Швейцария, Нидерланды, Швеция, Соединенное Королевство, Сингапур и США удерживают ведущие позиции в годовых рейтингах
+								a.item__link(href="news-item.html") Читать подробнее
+						.item
+							img.item__img(src=imgUrl+"news/img2.jpg", alt="")
+							.item-inner
+								p.item__date 22. 06. 2019
+								.item__line
+								p.item__text Китай стремительно ворвался в двадцатку лидеров; Швейцария, Нидерланды, Швеция, Соединенное Королевство, Сингапур и США удерживают ведущие позиции в годовых рейтингах
+								a.item__link(href="news-item.html") Читать подробнее
+						.item
+							img.item__img(src=imgUrl+"news/img2.jpg", alt="")
+							.item-inner
+								p.item__date 22. 06. 2019
+								.item__line
+								p.item__text Китай стремительно ворвался в двадцатку лидеров; Швейцария, Нидерланды, Швеция, Соединенное Королевство, Сингапур и США удерживают ведущие позиции в годовых рейтингах
+								a.item__link(href="news-item.html") Читать подробнее
+					.inner(data-year="2021")
+						.item
+							img.item__img(src=imgUrl+"news/img2.jpg", alt="")
+							.item-inner
+								p.item__date 22. 06. 2019
+								.item__line
+								p.item__text Китай стремительно ворвался в двадцатку лидеров; Швейцария, Нидерланды, Швеция, Соединенное Королевство, Сингапур и США удерживают ведущие позиции в годовых рейтингах
+								a.item__link(href="news-item.html") Читать подробнее
+					.inner(data-year="2019")
+						.item
+							img.item__img(src=imgUrl+"news/img2.jpg", alt="")
+							.item-inner
+								p.item__date 22. 06. 2019
+								.item__line
+								p.item__text Китай стремительно ворвался в двадцатку лидеров; Швейцария, Нидерланды, Швеция, Соединенное Королевство, Сингапур и США удерживают ведущие позиции в годовых рейтингах
+								a.item__link(href="news-item.html") Читать подробнее
+						.item
+							img.item__img(src=imgUrl+"news/img2.jpg", alt="")
+							.item-inner
+								p.item__date 22. 06. 2019
+								.item__line
+								p.item__text Китай стремительно ворвался в двадцатку лидеров; Швейцария, Нидерланды, Швеция, Соединенное Королевство, Сингапур и США удерживают ведущие позиции в годовых рейтингах
+								a.item__link(href="news-item.html") Читать подробнее
+
+
+		include ../blocks/footer.pug
+
+		include ../blocks/scripts.pug

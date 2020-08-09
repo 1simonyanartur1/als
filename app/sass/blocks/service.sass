@@ -1,0 +1,185 @@
+.b-services
+	padding: 115px 0
+	background: $green1
+	.container
+		display: flex
+		align-items: center
+		justify-content: space-between
+	.item
+		width: 350px
+		height: 305px
+		position: relative
+		&:hover
+			&:before
+				opacity: 1
+			.item__link
+				opacity: 1
+			.item__title
+				opacity: 0
+			.item__text
+				opacity: 1
+		&:before
+			content: ''
+			display: block
+			transition: all .3s ease-out
+			left: -10px
+			top: -10px
+			right: -10px
+			bottom: -10px
+			position: absolute
+			background: $green4
+			z-index: 1
+			clip-path: polygon(100% 0, 100% 60%, 69% 100%, 0 100%, 0 0)
+			opacity: 0
+		&__title
+			color: $white
+			padding: 20px
+			font-size: 24px
+			line-height: 1.3
+			z-index: 2
+			position: absolute
+			transition: all .3s ease-out
+		&__text
+			color: $white
+			padding: 20px
+			font-size: 18px
+			line-height: 1.3
+			z-index: 2
+			text-transform: none
+			transition: all .3s ease-out
+			position: absolute
+			opacity: 0
+		&__link
+			color: $white
+			font-size: 18px
+			letter-spacing: 0.03em
+			position: absolute
+			left: 20px
+			bottom: 20px
+			z-index: 2
+			opacity: 0
+			&:before
+				content: ''
+				position: absolute
+				display: block
+				height: 1px
+				background: $white
+				width: 100%
+				left: 0
+				bottom: -1px
+				transition: all .3s ease-out
+			&:after
+				content: '\e80d'
+				display: block
+				position: absolute
+				font-family: fontello
+				font-size: 10px
+				top: 50%
+				transform: translate(0, -50%)
+				right: -30px
+				color: $white
+				transition: all .3s ease-out
+			&:hover
+				color: $green3
+				&::before
+					width: 0
+				&::after
+					color: $green3
+
+.service
+	padding: 95px 0 20px
+	.top
+		margin-bottom: 130px
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	&-sidebar
+		width: 350px
+	&-content
+		width: 730px
+	.spoilers
+		padding: 35px 15px
+		background: #E0E2E3
+		margin-bottom: 30px
+	.spoiler
+		&:not(:last-child)
+			margin-bottom: 15px
+		&__title
+			color: $green4
+			text-transform: uppercase
+			font-size: 16px
+			line-height: 1.5
+			position: relative
+			margin-bottom: 12px
+			cursor: pointer
+			transition: all .3s ease-out
+			&:hover
+				color: $black
+			&.active
+				&:after
+					transform: rotate(0deg)
+			&:after
+				content: '\e80e'
+				font-family: fontello
+				display: inline-block
+				margin-left: 10px
+				font-size: 10px
+				position: absolute
+				top: 2px
+				right: 0
+				transition: all .3s ease-out
+				transform: rotate(-90deg)
+		&-list
+			li
+				margin-bottom: 12px
+			a
+				color: $black
+				font-size: 16px
+				font-weight: 400
+				line-height: 1.2
+				&:hover
+					color: $green3
+
+	.useful-info
+		border: 2px solid $green3
+		padding: 35px 20px
+		&__title
+			font-weight: 700
+			text-transform: uppercase
+			letter-spacing: 0.05em
+			margin-bottom: 15px
+			font-size: 18px
+		&-list
+			a
+				font-size: 18px
+				text-decoration: underline
+				color: $green3
+				letter-spacing: 0.05em
+				line-height: 2
+				&:hover
+					color: $black
+					text-decoration: none
+
+	.links
+		display: flex
+		flex-wrap: wrap
+		width: 101%
+		margin-left: -1%
+		li
+			width: 23%
+			margin: 1% 1% 60px
+		a
+			font-size: 20px
+			font-weight: 700
+			color: $black
+			line-height: 1.5
+			&:before
+				content: ''
+				display: block
+				width: 70px
+				height: 1px
+				background: $green3
+				margin-bottom: 35px
+			&:hover
+				color: $green3
+

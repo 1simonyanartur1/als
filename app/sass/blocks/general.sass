@@ -1,0 +1,107 @@
+.caption
+	color: $white
+	margin-bottom: 80px
+	&__title
+		line-height: 1.2
+		font-weight: 350
+		font-size: 60px
+		letter-spacing: 0.02em
+		text-transform: uppercase
+		span
+			font-size: 30px
+			letter-spacing: 0.05em
+			font-weight: 400
+			text-transform: none
+	&__title2
+		line-height: 1.2
+		font-weight: 350
+		font-size: 30px
+		letter-spacing: 0.02em
+		text-transform: uppercase
+		color: $green3
+	&__line
+		margin: 40px 0
+		height: 2px
+		width: 70px
+		background: $green4
+	&__subtitle
+		font-size: 30px
+		line-height: 1.2
+		font-weight: 400
+		letter-spacing: 0.05em
+	
+
+.heading
+	width: 100%
+	margin-top: 110px
+	position: relative
+	height: 312px
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	.container
+		width: 100%
+		position: relative
+	&__title
+		text-transform: uppercase
+		font-size: 45px
+		font-weight: 300
+		position: relative
+		z-index: 1
+		line-height: 1.5
+		color: $white
+		width: calc( 100% - 270px )
+	.btns
+		position: absolute
+		right: 0
+		top: 0
+		z-index: 2
+		li
+			&:not(:last-child)
+				margin-bottom: 20px
+	&__bgtitle
+		position: absolute
+		z-index: 2
+		left: 0
+		top: 0
+		color: rgba(96, 218, 218, 0.1)
+		letter-spacing: 0.02em
+		text-transform: uppercase
+		font-size: 135px
+		font-weight: 700
+
+.breadcrumbs
+	ul
+		li
+			display: inline-block
+			&:last-child
+				pointer-events: none
+			&:not(:last-child)
+				a
+					color: $green2
+					&:hover
+						color: $green1
+						&:after
+							background: $green1
+					&:after
+						content: ''
+						display: block
+						width: 100%
+						height: 1px
+						transition: all .3s ease-out
+						background: $green2
+			&:not(:first-child)
+				&:before
+					content: '/'
+					display: inline-block
+					font-size: 14px
+					color: $white
+					margin: 0 6px
+		a
+			position: relative
+			color: $white
+			letter-spacing: 0.02em
+			font-size: 14px
+			font-weight: 400
+			&:hover
+				color: $green1

@@ -1,0 +1,66 @@
+.advantages
+	&.type2
+		background: $green1
+		padding: 145px 0 60px
+		.top
+			background: none
+			padding: 0
+		.caption
+			margin-bottom: 150px
+	.caption
+		&__title
+			color: $green4
+		&__subtitle
+			color: $black
+	.top
+		padding: 80px 0 0
+		background: url($imgUrl+'advantages/bg1.jpg') no-repeat center center / cover
+		.list
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+		.item
+			width: 325px
+			display: flex
+			flex-direction: column
+			align-items: center
+			text-align: center
+			margin-bottom: 85px
+			&__icon
+				display: block
+				margin-bottom: 40px
+				height: 90px
+				width: auto
+			&__text
+				color: $black
+				letter-spacing: 0.02em
+				font-size: 20px
+				line-height: 1.2
+				font-weight: 700
+	.bottom
+		background: url($imgUrl+'advantages/bg2.jpg') no-repeat center center / cover
+		padding: 80px 0
+		.list
+			display: flex
+			justify-content: space-between
+		.item
+			position: relative
+			&::before
+				content: '+'
+				color: $green2
+				font-size: 36px
+				font-weight: 300
+				display: block
+				text-align: right
+				margin-right: -10px
+			&__num
+				color: #DCECF8
+				margin-bottom: 30px
+				font-weight: 700
+				font-size: 90px
+				letter-spacing: 0.02em
+			&__text
+				font-size: 24px
+				letter-spacing: 0.05em
+				color: $white
+

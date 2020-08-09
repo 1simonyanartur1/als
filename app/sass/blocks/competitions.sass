@@ -1,0 +1,122 @@
+.competitions
+	padding: 95px 0
+	.caption
+		margin-bottom: 95px
+		&__line
+			background: $green3
+			margin: 30px 0
+		&__text
+			color: $black
+			font-size: 24px
+			line-height: 1.8
+	.btns
+		margin-bottom: 95px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		li
+			width: 49%
+		a
+			position: relative
+			display: flex
+			align-items: center
+			justify-content: center
+			text-transform: uppercase
+			color: $green4
+			font-size: 18px
+			font-weight: 700
+			width: 100%
+			height: 110px
+			border: 2px solid $green4
+			&:after
+				background: $green4
+			&:hover
+				box-shadow: 5px 4px 10px rgba(16, 61, 59, 0.3)
+				border-color: $green3
+
+	.inner
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	.item
+		width: 49%
+		height: 305px
+		margin-bottom: 30px
+		position: relative
+		&:hover
+			&:before
+				opacity: 1
+			.item__link
+				opacity: 1
+			.item__title
+				opacity: 0
+			.item__text
+				opacity: 1
+		&:before
+			content: ''
+			display: block
+			transition: all .3s ease-out
+			left: -10px
+			top: -10px
+			right: -10px
+			bottom: -10px
+			position: absolute
+			background: $green4
+			z-index: 1
+			clip-path: polygon(100% 0, 100% 60%, 69% 100%, 0 100%, 0 0)
+			opacity: 0
+		&__title
+			color: $white
+			padding: 20px
+			font-size: 24px
+			line-height: 1.3
+			text-transform: uppercase
+			z-index: 2
+			position: absolute
+			transition: all .3s ease-out
+		&__text
+			color: $white
+			padding: 20px
+			font-size: 24px
+			line-height: 1.3
+			z-index: 2
+			text-transform: none
+			transition: all .3s ease-out
+			position: absolute
+			opacity: 0
+		&__link
+			color: $white
+			font-size: 18px
+			letter-spacing: 0.02em
+			position: absolute
+			left: 20px
+			bottom: 20px
+			z-index: 2
+			opacity: 0
+			&:before
+				content: ''
+				position: absolute
+				display: block
+				height: 1px
+				background: $white
+				width: 100%
+				left: 0
+				bottom: -1px
+				transition: all .3s ease-out
+			&:after
+				content: '\e80d'
+				display: block
+				position: absolute
+				font-family: fontello
+				font-size: 10px
+				top: 50%
+				transform: translate(0, -50%)
+				right: -30px
+				color: $white
+				transition: all .3s ease-out
+			&:hover
+				color: $green3
+				&::before
+					width: 0
+				&::after
+					color: $green3

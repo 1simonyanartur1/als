@@ -1,0 +1,69 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0; }
+  *:before, *:after {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0; }
+
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  background: none; }
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="submit"],
+input[type="number"],
+input[type="search"] {
+  -webkit-appearance: none; }
+
+ul,
+ol,
+nav {
+  list-style-type: none; }
+  ul li,
+  ol li,
+  nav li {
+    list-style-type: none; }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
+
+html,
+body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.page-container {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  height: auto;
+  position: relative;
+  overflow: hidden; }
+
+.container {
+  max-width: 1130px;
+  padding: 0;
+  margin: 0 auto;
+  height: auto; }
+
+.site-block {
+  padding: 100px 0; }

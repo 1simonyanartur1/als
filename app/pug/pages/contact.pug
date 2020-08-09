@@ -1,0 +1,80 @@
+- var imgUrl = '../img/';
+  
+doctype
+html
+	include ../blocks/head.pug
+		title АЛС
+	body
+		include ../blocks/header2.pug
+
+		.page-container
+			section.heading(style="background: url(../img/heading/contact.jpg) no-repeat center center / cover;")
+				.container
+					h1.heading__title КОНТАКТЫ
+					h2.heading__bgtitle КОНТАКТЫ
+				.breadcrumbs
+					.container
+						ul
+							li
+								a(href="#") Главная
+							li
+								a(href="#") Контакты
+
+			section.contact
+				.container
+					h2.contact__title Представительства ALS PARTNERS
+					.inner
+						.item
+							.item-inner
+								h2.item__title РОССИЯ
+								.item__line
+								p.item__text 127051, Москва, <br> площадь Малая Сухаревская, <br> дом 12, офис 303
+								ul.tels.icon-tel
+									li
+										a(href="#") +7 495 585-38-65
+								ul.mails.icon-mail
+									li
+										a(href="#") info@als-partners.ru
+								p.item__text Прием звонков: <br> с 10:00 до 20:00 (Пн-Пт)
+						.item
+							.item-inner
+								h2.item__title США
+								.item__line
+								p.item__text 33020, Hollywood, <br> 1722 Sheridan Street, ste 110
+								ul.tels.icon-tel
+									li
+										a(href="#") + 1 (786) 216-82-82
+								ul.mails.icon-mail
+									li
+										a(href="#") info@als-partners.ru
+						.item
+							.item-inner
+								h2.item__title Германия
+								.item__line
+								p.item__text 80799, Мюнхен, <br> Барэр стрит, 86-90, офис 105
+								ul.tels.icon-tel
+									li
+										a(href="#") + 49 (1575) 144-23-50
+								ul.mails.icon-mail
+									li
+										a(href="#") support@als-partners.ru
+
+			section.b-news
+				.container
+					.caption
+						h2.caption__title новости
+					ul.smallnews
+						li.smallnews-item
+							span.smallnews__date 22. 06. 2019
+							.smallnews__line
+							p.smallnews__text.change-scroll Китай победил в «битве мозгов» США и их российских союзников
+							a.smallnews__link(href="news-item.html") Читать подробнее
+						li.smallnews-item
+							span.smallnews__date 22. 06. 2019
+							.smallnews__line
+							p.smallnews__text.change-scroll Компания Coolpad подала в суд на Xiaomi, обвиняя её в нарушении ряда патентов
+							a.smallnews__link(href="news-item.html") Читать подробнее
+
+		include ../blocks/footer.pug
+
+		include ../blocks/scripts.pug

@@ -1,0 +1,216 @@
+.b-contact
+	padding: 100px 0 140px
+	background: url($imgUrl+'contact/bg1.jpg') no-repeat center center / cover
+	.container
+		width: 825px
+	.form
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&-item
+			margin-bottom: 30px
+			position: relative
+			&.icon-user2
+				font-size: 24px
+			&.icon-tel
+				font-size: 24px
+			&.icon-suitcase
+				font-size: 18px
+			&.icon-mail
+				font-size: 16px
+			&:before
+				position: absolute
+				color: $white
+				top: 50%
+				right: 15px
+				transform: translate(0, -50%)
+			&.small
+				width: 350px
+			&.middle
+				width: 445px
+			&.large
+				width: 100%
+		&__input,
+		&__textarea
+			background: rgba(255, 255, 255, 0.2)
+			border: 1px solid #FFFFFF
+			font: 16px 'Proxima', sans-serif
+			color: $white
+			display: block
+			width: 100%
+			height: 50px
+			padding: 0 50px 0 15px
+			transition: all .3s ease-out
+			&:hover,
+			&:focus
+				border: 1px solid transparent
+			&::placeholder
+				color: $white
+		&__textarea
+			min-height: 150px
+			padding: 15px
+		&__btn
+			display: block
+			margin-left: auto
+
+.nice-select
+	width: 100%
+	border-radius: 0
+	background: rgba(255, 255, 255, 0.2)
+	border: 1px solid #FFFFFF
+	height: 50px
+	font: 16px/50px 'Proxima', sans-serif
+	color: $white
+	&:after
+		border-color: $white
+		font-size: 20px
+		right: 20px
+		width: 10px
+		height: 10px
+		margin-top: -7px
+	.list
+		width: 100%
+	.option
+		width: 100%
+		color: $black
+
+.checkbox
+	position: relative
+	display: flex
+	align-items: center
+	user-select: none
+	cursor: pointer
+	margin-bottom: 6px
+	&:hover
+		.checkbox__mark:before
+			background: $green2
+	&__input
+		position: absolute
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		opacity: 0
+		cursor: pointer
+		z-index: 2
+		&:checked ~ .checkbox__mark:after
+			display: block
+	&__mark
+		color: $white
+		a
+			color: $white
+			&:hover
+				text-decoration: underline
+		&:before
+			content: ''
+			display: inline-block
+			margin-right: 10px
+			width: 16px
+			height: 16px
+			background: $green3
+			transition: all .3s ease-out
+		&:after
+			content: '\e812'
+			width: 10px
+			height: 10px
+			position: absolute
+			left: 3px
+			top: 3px
+			display: none
+			font-family: fontello
+			font-size: 10px
+			color: $white
+			transition: all .3s ease-out
+
+
+
+.contact
+	background: url($imgUrl+'contact/bg.jpg') no-repeat center center / cover
+	padding: 85px 0 200px
+	&+.b-news
+		.caption
+			text-align: center
+	&__title
+		font-size: 40px
+		line-height: 1.4
+		margin-bottom: 65px
+		font-weight: 400
+		color: $green4
+	.inner
+		display: flex
+		flex-wrap: wrap
+	.item
+		width: 33.3%
+		background: url($imgUrl+'contact/item-bg.jpg') no-repeat center center / cover
+		min-height: 670px
+		&:hover
+			.item-inner
+				background: none
+			.item__title
+				color: $white
+			.item__text
+				color: $white
+			.item__line
+				background: $white
+			.tels,
+			.mails
+				&:before
+					color: $white
+				a
+					color: $white
+		&-inner
+			padding: 110px 10px
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			flex-direction: column
+			position: relative
+			z-index: 2
+			background: $white
+			height: 100%
+			transition: all .3s ease-out
+		&__title
+			color: $green4
+			text-transform: uppercase
+			font-weight: 700
+			font-size: 35px
+			letter-spacing: 0.03em
+		&__line
+			height: 1px
+			width: 70px
+			margin: 40px 0
+			background: $green4
+		&__text
+			color: $green4
+			font-size: 21px
+			font-weight: 400
+			line-height: 1.5
+			text-align: center
+		.tels,
+		.mails
+			display: block
+			margin-top: 70px
+			padding-left: 35px
+			position: relative
+			margin-bottom: 10px
+			&:before
+				display: inline-block
+				font-size: 18px
+				top: 0
+				left: 0
+				position: absolute
+			li
+				display: block
+				width: 100%
+			a
+				color: $green4
+				display: block
+				width: 100%
+				font-weight: 400
+				font-size: 21px
+		.mails
+			margin-bottom: 50px
+			margin-top: 0
+			&:before
+				font-size: 15px
+

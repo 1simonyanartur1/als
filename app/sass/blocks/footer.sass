@@ -1,0 +1,79 @@
+.footer
+	padding: 40px 0
+	background: $green4
+	.container
+		display: flex
+		justify-content: space-between
+	.left
+		width: calc( 100% - 370px )
+		display: flex
+		justify-content: space-between
+		&-block
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			&__title
+				text-transform: uppercase
+				color: $white
+				letter-spacing: 0.03em
+				font-weight: 700
+				font-size: 17px
+				margin-bottom: 110px
+	.social
+		display: flex
+		align-items: center
+		&__text
+			color: $white
+			font-size: 16px
+		&-list
+			padding-left: 10px
+			li
+				display: inline-block
+				margin: 0 10px
+			a
+				font-size: 24px
+				color: $white
+				&:hover
+					color: $green2
+	&__text
+		font: 400 12px/1.5 'Proxima', sans-serif
+		color: $white
+		letter-spacing: 0.02em
+		margin-top: auto
+	&__link
+		letter-spacing: 0.02em
+		color: $white
+		text-decoration: underline
+		font: 400 12px/1.5 'Proxima', sans-serif
+		&:hover
+			color: $green2
+	.tels,
+	.mails
+		position: relative
+		padding-left: 50px
+		&::before
+			position: absolute
+			font-size: 16px
+			left: 0
+			top: 7px
+			color: $white
+		li
+		a
+			color: $white
+			font-size: 16px
+			line-height: 2.1
+			&:hover
+				color: $green2
+	.tels
+		&::before
+			top: 0
+			font-size: 24px
+	.right
+		width: 255px
+		&-menu
+			a
+				color: $white
+				font-size: 17px
+				line-height: 2
+				&:hover
+					color: $green2

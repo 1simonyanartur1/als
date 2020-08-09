@@ -1,0 +1,88 @@
+.callback
+	padding: 200px 0 230px
+	background: url($imgUrl+'callback/bg.jpg') no-repeat center bottom / cover
+	.container
+		max-width: 900px
+		position: relative
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			left: -10px
+			top: -10px
+			bottom: 20px
+			right: 10px
+			z-index: 1
+			background: $green4
+			clip-path: polygon(100% 0, 100% 73%, 83% 100%, 0 100%, 0 0)
+	.inner
+		padding: 75px 70px 50px
+		background: $gray1
+		clip-path: polygon(100% 0, 100% 73%, 83% 100%, 0 100%, 0 0)
+		box-shadow: 5px 4px 10px rgba(16, 61, 59, 0.3)
+		position: relative
+		z-index: 2
+	.caption
+		margin-bottom: 40px
+		&__title
+			color: $green4
+		&__text
+			color: $green4
+			font-size: 30px
+			letter-spacing: 0.05em
+	.form
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+		justify-content: space-between
+		&-left,
+		&-right
+			width: 360px
+		&-item
+			width: 100%
+			margin-bottom: 30px
+			position: relative
+			&.icon-user2
+				font-size: 20px
+			&.icon-tel
+				font-size: 20px
+			&.icon-suitcase
+				font-size: 20px
+			&:before
+				position: absolute
+				color: $green3
+				top: 50%
+				right: 15px
+				transform: translate(0, -50%)
+		&__input,
+		&__textarea
+			background: rgba(255, 255, 255, .65)
+			border: 1px solid #FFFFFF
+			font: 16px 'Proxima', sans-serif
+			color: $black
+			display: block
+			width: 100%
+			height: 50px
+			padding: 0 50px 0 15px
+			transition: all .3s ease-out
+			&:hover,
+			&:focus
+				border: 1px solid $green3
+			&::placeholder
+				color: $black
+		&__textarea
+			min-height: 130px
+			padding: 15px
+		&__btn
+			display: block
+			margin-top: 70px
+		.checkbox
+			&__mark
+				color: $black
+				a
+					color: $green3
+					text-decoration: underline
+					&:hover
+						text-decoration: none
+
+	

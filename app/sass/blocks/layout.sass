@@ -1,0 +1,36 @@
+html,
+body
+	height: 100%
+	display: flex
+	flex-direction: column
+
+body
+	font-family: 'Circe', sans-serif
+	line-height: 1
+	font-size: 14px
+body,
+.change-scroll
+	&::-webkit-scrollbar
+		width: 10px
+	&::-webkit-scrollbar-track
+		background: $green1
+	&::-webkit-scrollbar-thumb
+		background: $green3
+	&::-webkit-scrollbar-thumb:hover
+		background: $green2
+
+.page-container
+	width: 100%
+	flex: 1 0 auto
+	height: auto
+	position: relative
+	overflow: hidden
+
+.container
+	max-width: 1110px
+	padding: 0
+	margin: 0 auto
+	height: auto
+
+.site-block
+	padding: 100px 0
