@@ -2,11 +2,15 @@
 	position: relative
 	.slide
 		width: 100vw
-		height: 100vh
+		min-height: 100vh
+		padding: 50px 0
 		display: flex
 		align-items: center
 		justify-content: center
 		border: none
+		@include mq($max-width: 1200px)
+			min-height: 50vh
+			justify-content: flex-start
 		&__text
 			line-height: 1.5
 			font-weight: 300
@@ -15,17 +19,30 @@
 			font-size: 60px
 			max-width: 1110px
 			letter-spacing: 0.05em
+			@include mq($max-width: 1500px)
+				font-size: 40px
+			@include mq($max-width: 1200px)
+				width: 80%
+				padding-left: 15px
+			@include mq($max-width: 800px)
+				font-size: 30px
+			@include mq($max-width: 575px)
+				font-size: 22px
+			@include mq($max-width: 370px)
+				font-size: 18px
 			strong
 				font-weight: 400
 	.slick-dots
 		position: absolute
 		right: 10%
 		top: 50%
-		transform: translate(0, 50%)
+		transform: translate(0, -50%)
 		display: flex
 		flex-direction: column
 		justify-content: center
 		align-items: center
+		@include mq($max-width: 1200px)
+			right: 30px
 		li
 			margin: 10px 0
 			&.slick-active button

@@ -1,10 +1,15 @@
 .office
 	padding: 80px 0 0
+	@include mq($max-width: 700px)
+		padding: 40px 0 0
 	.caption
 		&__title
 			color: $green4
 			display: flex
 			align-items: center
+			@include mq($max-width: 575px)
+				flex-wrap: wrap
+				font-size: 20px
 			&:before
 				content: ''
 				display: inline-block
@@ -12,30 +17,58 @@
 				height: 90px
 				margin-right: 35px
 				background: url($imgUrl+'icons/planet.svg') no-repeat center center / contain
+				@include mq($max-width: 1200px)
+					width: 60px
+					height: 60px
+				@include mq($max-width: 575px)
+					display: block
+					margin-right: 0
+					margin-bottom: 10px
 		&__line
 			background: $green4
 			margin-left: 130px
 		&__subtitle
 			color: $black
 			font-size: 24px
+			@include mq($max-width: 1200px)
+				font-size: 20px
+			@include mq($max-width: 575px)
+				font-size: 16px
 	&__map
 		display: block
 		width: 100%
 		height: auto
+		@include mq($max-width: 700px)
+			display: none
 	.bottom
 		position: relative
 		width: 90%
 		margin-left: auto
 		margin-right: auto
+		@include mq($max-width: 1200px)
+			width: 100%
+		@include mq($max-width: 700px)
+			display: flex
+			flex-wrap: wrap
 	.map-block
 		position: absolute
 		z-index: 1
+		@include mq($max-width: 700px)
+			position: static
+			width: 48%
+			margin: 1% 1% 35px
+		@include mq($max-width: 400px)
+			width: 100%
 		&.rus
 			right: 30%
 			top: 25%
+			@include mq($max-width: 1200px)
+				right: 15%
 		&.ger
 			right: 43%
 			top: 28%
+			@include mq($max-width: 1200px)
+				right: 35%
 		&.usa
 			left: 22%
 			top: 32%
@@ -48,9 +81,13 @@
 			font-weight: 700
 			margin-bottom: 15px
 			position: relative
+			@include mq($max-width: 575px)
+				font-size: 22px
 			&:before
 				color: $green4
 				font-size: 35px
+				@include mq($max-width: 575px)
+					font-size: 25px
 			&:after
 				content: ''
 				display: block
@@ -60,41 +97,60 @@
 				position: absolute
 				left: 50px
 				bottom: -5px
+				@include mq($max-width: 575px)
+					left: 40px
 		&-inner
 			position: absolute
 			background: $white
 			padding: 5px
 			width: 255px
 			display: none
+			@include mq($max-width: 700px)
+				position: static
+				display: block
 			a
 				color: $green4
 				font-size: 21px
 				font-weight: 700
+				@include mq($max-width: 575px)
+					font-size: 16px
 		.tels
 			position: relative
 			display: block
 			padding-left: 40px
+			@include mq($max-width: 575px)
+				padding-left: 30px
 			&:before
 				color: $green4
 				font-size: 18px
 				position: absolute
 				left: 2px
 				top: 0
+				@include mq($max-width: 575px)
+					font-size: 14px
 			li
 				display: block
 			a
 				display: block
+				&:hover
+					color: $green2
 		.mails
 			position: relative
 			display: block
 			padding-left: 40px
+			@include mq($max-width: 575px)
+				padding-left: 30px
 			&:before
 				color: $green4
 				font-size: 15px
 				position: absolute
 				left: 0
 				top: 2px
+				@include mq($max-width: 575px)
+					font-size: 12px
 			li
 				display: block
 			a
 				display: block
+				&:hover
+					color: $green2

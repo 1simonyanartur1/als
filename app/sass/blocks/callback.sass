@@ -1,6 +1,29 @@
 .callback
 	padding: 200px 0 230px
 	background: url($imgUrl+'callback/bg.jpg') no-repeat center bottom / cover
+	position: relative
+	@include mq($max-width: 1700px)
+		padding: 100px 0
+	@include mq($max-width: 1000px)
+		padding: 50px 0
+	.line1
+		position: absolute
+		left: 0
+		top: 0
+		display: block
+		@include mq($max-width: 1700px)
+			width: 25%
+		@include mq($max-width: 1200px)
+			display: none
+	.line2
+		position: absolute
+		right: 0
+		bottom: 0
+		display: block
+		@include mq($max-width: 1700px)
+			width: 30%
+		@include mq($max-width: 1200px)
+			display: none
 	.container
 		max-width: 900px
 		position: relative
@@ -22,6 +45,8 @@
 		box-shadow: 5px 4px 10px rgba(16, 61, 59, 0.3)
 		position: relative
 		z-index: 2
+		@include mq($max-width: 1200px)
+			padding: 25px
 	.caption
 		margin-bottom: 40px
 		&__title
@@ -38,10 +63,16 @@
 		&-left,
 		&-right
 			width: 360px
+			@include mq($max-width: 1200px)
+				width: 49%
+			@include mq($max-width: 700px)
+				width: 100%
 		&-item
 			width: 100%
 			margin-bottom: 30px
 			position: relative
+			@include mq($max-width: 700px)
+				margin-bottom: 15px
 			&.icon-user2
 				font-size: 20px
 			&.icon-tel
@@ -76,6 +107,8 @@
 		&__btn
 			display: block
 			margin-top: 70px
+			@include mq($max-width: 1200px)
+				margin-top: 25px
 		.checkbox
 			&__mark
 				color: $black

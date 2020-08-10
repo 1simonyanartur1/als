@@ -4,10 +4,18 @@
 	text-align: center
 	border: 1px solid $green3
 	letter-spacing: 0.03em
-	padding: 10px 0
+	padding: 15px 0
 	font-size: 15px
 	transition: all .3s ease-out
 	cursor: pointer
+	@include mq($max-width: 575px)
+		padding: 15px 15px
+		font-size: 14px
+		width: auto
+	&:hover
+		background: $green3
+		color: $white
+
 
 .btn2
 	color: $white
@@ -20,6 +28,10 @@
 	background: none
 	transition: all .3s ease-out
 	cursor: pointer
+	@include mq($max-width: 575px)
+		padding: 15px 25px
+		font-size: 14px
+		width: auto
 	&:hover
 		background: $green3
 
@@ -34,6 +46,10 @@
 	font-size: 20px
 	transition: all .3s ease-out
 	cursor: pointer
+	@include mq($max-width: 575px)
+		padding: 15px 25px
+		font-size: 14px
+		width: auto
 	&:hover
 		background: none
 		color: $green4
@@ -49,6 +65,10 @@
 	font-size: 20px
 	transition: all .3s ease-out
 	cursor: pointer
+	@include mq($max-width: 575px)
+		padding: 15px 25px
+		font-size: 14px
+		width: auto
 	&:hover
 		background: $green3
 		border-color: $green3

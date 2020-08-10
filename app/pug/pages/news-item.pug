@@ -1,0 +1,66 @@
+- var imgUrl = '../img/';
+  
+doctype
+html
+	include ../blocks/head.pug
+		title АЛС
+	body
+		include ../blocks/header2.pug
+
+		.page-container
+			section.heading(style="background: url(../img/heading/news.jpg) no-repeat center center / cover;")
+				.container
+					h1.heading__title Китай победил в «битве мозгов» США и их российских союзников
+					h2.heading__bgtitle Новости
+				.breadcrumbs
+					.container
+						ul
+							li
+								a(href="#") Главная
+							li
+								a(href="#") Новости
+							li
+								a(href="#") Китай победил в «битве мозгов» США и их российских союзников
+
+			section.news-item
+				.container
+					p.news-item__date 22 июня  2019
+					.top
+						img.news-item__img(src=imgUrl+"news/img3.jpg", alt="")
+						ul.social
+							li
+								a.icon-facebook(href="#")
+							li
+								a.icon-vkontakte(href="#")
+							li
+								a.icon-twitter(href="#")
+							li
+								a.icon-insta(href="#")
+					.text-container
+						p Конечно, не всякий патент — грандиозная инновация, способная перевернуть мир, это может быть просто новая модель зажигалки. И не каждый китайский патент принадлежит жителю страны — это может быть и иностранец. Но ровно те же оговорки можно и нужно сделать в отношении патентов, зарегистрированных, допустим, в США.
+						p Говорит этот показатель о том, что глобальный интеллект утекает из США (бывшего лидера по этой части) в Китай. Причем тенденция инновационного сдвига в сторону Китая и прочей Азии прослеживается давно, уже лет десять-пятнадцать и притом с ускорением: только за 2017-й мы наблюдаем рост по части доли китайских заявок на патенты на 4,8%.
+						p Термин «утечка мозгов», напомним, родился в предыдущую эпоху, когда из не вполне развитых стран молодые люди отправлялись учиться на Запад и не возвращались, оставаясь работать на инновационный потенциал, к примеру, США. Потому что там больше платили и вдобавок исследовали интереснейшие проблемы, на пару технологических уровней выше, чем дома.
+					a.backlink.icon-arrow(href="#") Назад
+
+
+			section.b-news.type2
+				img.line3(src=imgUrl+"lines/line11.png", alt="")
+				.container
+					.caption.tac
+						h2.caption__title ДРУГИЕ НОВОСТИ
+					ul.smallnews
+						li.smallnews-item
+							span.smallnews__date 22. 06. 2019
+							.smallnews__line
+							p.smallnews__text.change-scroll Компания Coolpad подала в суд на Xiaomi, обвиняя её в нарушении ряда патентов
+							a.smallnews__link(href="news-item.html") Читать подробнее
+						li.smallnews-item
+							span.smallnews__date 22. 06. 2019
+							.smallnews__line
+							p.smallnews__text.change-scroll Китай победил в «битве мозгов» США и их российских союзников
+							a.smallnews__link(href="news-item.html") Читать подробнее
+
+
+		include ../blocks/footer.pug
+
+		include ../blocks/scripts.pug

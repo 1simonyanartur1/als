@@ -1,8 +1,25 @@
 .b-contact
 	padding: 100px 0 140px
 	background: url($imgUrl+'contact/bg1.jpg') no-repeat center center / cover
+	position: relative
+	@include mq($max-width: 1700px)
+		padding: 75px 0
+	@include mq($max-width: 1200px)
+		padding: 50px 0
+	@include mq($max-width: 1000px)
+		padding: 30px 0
+	.line
+		position: absolute
+		left: 0
+		top: 0
+		display: block
+		width: 26%
+		@include mq($max-width: 1200px)
+			display: none
 	.container
 		width: 825px
+		@include mq($max-width: 1000px)
+			width: 100%
 	.form
 		display: flex
 		flex-wrap: wrap
@@ -10,14 +27,22 @@
 		&-item
 			margin-bottom: 30px
 			position: relative
+			@include mq($max-width: 575px)
+				margin-bottom: 15px
 			&.icon-user2
-				font-size: 24px
+				&:before
+					font-size: 20px
+					right: 10px
 			&.icon-tel
-				font-size: 24px
+				&:before
+					font-size: 20px
+					right: 10px
 			&.icon-suitcase
-				font-size: 18px
+				&:before
+					font-size: 20px
 			&.icon-mail
-				font-size: 16px
+				&:before
+					font-size: 16px
 			&:before
 				position: absolute
 				color: $white
@@ -26,8 +51,16 @@
 				transform: translate(0, -50%)
 			&.small
 				width: 350px
+				@include mq($max-width: 1000px)
+					width: 49%
+				@include mq($max-width: 575px)
+					width: 100%
 			&.middle
 				width: 445px
+				@include mq($max-width: 1000px)
+					width: 49%
+				@include mq($max-width: 575px)
+					width: 100%
 			&.large
 				width: 100%
 		&__input,
@@ -127,6 +160,8 @@
 .contact
 	background: url($imgUrl+'contact/bg.jpg') no-repeat center center / cover
 	padding: 85px 0 200px
+	@include mq($max-width: 1500px)
+		padding: 40px 0
 	&+.b-news
 		.caption
 			text-align: center
@@ -136,6 +171,11 @@
 		margin-bottom: 65px
 		font-weight: 400
 		color: $green4
+		@include mq($max-width: 1200px)
+			font-size: 30px
+			margin-bottom: 35px
+		@include mq($max-width: 575px)
+			font-size: 24px
 	.inner
 		display: flex
 		flex-wrap: wrap
@@ -143,6 +183,14 @@
 		width: 33.3%
 		background: url($imgUrl+'contact/item-bg.jpg') no-repeat center center / cover
 		min-height: 670px
+		@include mq($max-width: 1200px)
+			width: 48%
+			min-height: 250px
+		@include mq($max-width: 700px)
+			width: 100%
+		@include mq($max-width: 575px)
+			min-height: 200px
+			border-top: 1px solid $green4
 		&:hover
 			.item-inner
 				background: none
@@ -169,23 +217,33 @@
 			background: $white
 			height: 100%
 			transition: all .3s ease-out
+			@include mq($max-width: 1200px)
+				padding: 50px 10px
+			@include mq($max-width: 575px)
+				padding: 30px 10px
 		&__title
 			color: $green4
 			text-transform: uppercase
 			font-weight: 700
 			font-size: 35px
 			letter-spacing: 0.03em
+			@include mq($max-width: 575px)
+				font-size: 26px
 		&__line
 			height: 1px
 			width: 70px
 			margin: 40px 0
 			background: $green4
+			@include mq($max-width: 575px)
+				margin: 20px 0
 		&__text
 			color: $green4
 			font-size: 21px
 			font-weight: 400
 			line-height: 1.5
 			text-align: center
+			@include mq($max-width: 575px)
+				font-size: 18px
 		.tels,
 		.mails
 			display: block
@@ -193,6 +251,8 @@
 			padding-left: 35px
 			position: relative
 			margin-bottom: 10px
+			@include mq($max-width: 575px)
+				margin-top: 35px
 			&:before
 				display: inline-block
 				font-size: 18px
@@ -208,6 +268,8 @@
 				width: 100%
 				font-weight: 400
 				font-size: 21px
+				@include mq($max-width: 575px)
+					font-size: 18px
 		.mails
 			margin-bottom: 50px
 			margin-top: 0

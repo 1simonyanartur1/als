@@ -1,17 +1,29 @@
 .caption
 	color: $white
 	margin-bottom: 80px
+	@include mq($max-width: 1700px)
+		margin-bottom: 50px
+	@include mq($max-width: 700px)
+		margin-bottom: 30px
 	&__title
 		line-height: 1.2
 		font-weight: 350
 		font-size: 60px
 		letter-spacing: 0.02em
 		text-transform: uppercase
+		@include mq($max-width: 1700px)
+			font-size: 50px
+		@include mq($max-width: 700px)
+			font-size: 35px
+		@include mq($max-width: 575px)
+			font-size: 28px
 		span
 			font-size: 30px
 			letter-spacing: 0.05em
 			font-weight: 400
 			text-transform: none
+			@include mq($max-width: 1700px)
+				font-size: 25px
 	&__title2
 		line-height: 1.2
 		font-weight: 350
@@ -19,46 +31,104 @@
 		letter-spacing: 0.02em
 		text-transform: uppercase
 		color: $green3
+		@include mq($max-width: 1700px)
+			font-size: 25px
 	&__line
 		margin: 40px 0
 		height: 2px
 		width: 70px
 		background: $green4
+		@include mq($max-width: 700px)
+			margin: 20px 0
 	&__subtitle
-		font-size: 30px
+		font-size: 24px
 		line-height: 1.2
 		font-weight: 400
 		letter-spacing: 0.05em
-	
+		@include mq($max-width: 1700px)
+			font-size: 20px
+		@include mq($max-width: 575px)
+			font-size: 16px
+
+.page-sidebar
+	width: 350px
+	@include mq($max-width: 1200px)
+		width: 30%
+	@include mq($max-width: 800px)
+		width: 100%
+.page-content
+	width: 730px
+	@include mq($max-width: 1200px)
+		width: 70%
+		padding-left: 15px
+	@include mq($max-width: 800px)
+		width: 100%
+		order: -1
+		margin-bottom: 15px
+	@include mq($max-width: 700px)
+		padding-left: 0
 
 .heading
 	width: 100%
 	margin-top: 110px
 	position: relative
-	height: 312px
+	min-height: 312px
 	display: flex
 	flex-direction: column
 	justify-content: space-around
+	@include mq($max-width: 1200px)
+		margin-top: 0
+		padding-top: 120px
+		padding-bottom: 50px
 	.container
 		width: 100%
 		position: relative
 	&__title
 		text-transform: uppercase
-		font-size: 45px
+		font-size: 40px
 		font-weight: 300
 		position: relative
 		z-index: 1
 		line-height: 1.5
 		color: $white
-		width: calc( 100% - 270px )
+		width: calc( 100% - 260px )
+		@include mq($max-width: 1500px)
+			font-size: 35px
+		@include mq($max-width: 1200px)
+			font-size: 28px
+			width: 100%
+		@include mq($max-width: 575px)
+			font-size: 22px
+		@include mq($max-width: 370px)
+			font-size: 18px
 	.btns
 		position: absolute
 		right: 0
 		top: 0
 		z-index: 2
+		margin: 15px 0
+		@include mq($max-width: 1200px)
+			width: 100%
+			position: static
+			display: flex
+			flex-wrap: wrap
+			align-items: center
 		li
+			@include mq($max-width: 700px)
+				width: 49%
+			@include mq($max-width: 575px)
+				width: 100%
 			&:not(:last-child)
 				margin-bottom: 20px
+				@include mq($max-width: 1200px)
+					margin-bottom: 0
+					margin-right: 2%
+				@include mq($max-width: 575px)
+					margin-right: 0
+					margin-bottom: 1%
+			a
+				@include mq($max-width: 575px)
+					width: 100%
 	&__bgtitle
 		position: absolute
 		z-index: 2
@@ -69,6 +139,10 @@
 		text-transform: uppercase
 		font-size: 135px
 		font-weight: 700
+		@include mq($max-width: 1200px)
+			font-size: 80px
+		@include mq($max-width: 575px)
+			font-size: 50px
 
 .breadcrumbs
 	ul
@@ -90,18 +164,85 @@
 						height: 1px
 						transition: all .3s ease-out
 						background: $green2
+						@include mq($max-width: 1200px)
+							display: none
 			&:not(:first-child)
-				&:before
-					content: '/'
-					display: inline-block
-					font-size: 14px
-					color: $white
-					margin: 0 6px
+				a
+					padding-left: 20px
+					&:before
+						content: '/'
+						display: inline-block
+						font-size: 14px
+						color: $white
+						margin: 0 6px
+						position: absolute
+						left: 0
 		a
 			position: relative
 			color: $white
 			letter-spacing: 0.02em
 			font-size: 14px
+			line-height: 1.4
 			font-weight: 400
+			@include mq($max-width: 370px)
+				font-size: 12px
 			&:hover
 				color: $green1
+
+
+.tac
+	text-align: center
+.tal
+	text-align: left
+.tar
+	text-align: right
+
+.burger
+	width: 30px
+	height: 30px
+	position: relative
+	cursor: pointer
+	background: transparent
+	display: none
+	margin-left: 10px
+	@include mq($max-width: 700px)
+		display: block
+
+	.bar 
+		padding: 0
+		width: 30px
+		height: 2px
+		display: block
+		background: $white
+		transition: all 0.3s ease-in-out
+		position: absolute 
+
+	.bar 
+		transition: all 0.3s ease-in-out
+
+	.bar1 
+		top: 0
+
+	.bar2 
+		top: 12px
+
+	.bar3 
+		top: 24px
+
+	&.active 
+
+		.bar1 
+			top: 13.5px
+			background-color: transparent
+
+		.bar2 
+			left: 0px
+			width: 30px
+			transform: rotate(45deg)
+			top: 12px
+
+		.bar3 
+			left: 0
+			width: 30px
+			top: 12px
+			transform: rotate(-45deg)

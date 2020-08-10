@@ -1,23 +1,24 @@
 header.header
 	.container
 		.left
-			a.logo(href="#")
+			a.logo(href="index.html")
 				img.logo__img(src=imgUrl+"logo.svg", alt="")
 				p.logo__text Международная <br> патентно-правовая <br> компания
 		.right
 			.right-top
 				ul.btns
 					li
-						a.btn1.popup-link(href="#") Оставить заявку
+						a.btn1.anchor(href="#b-contact") Оставить заявку
 				ul.tels
 					li
-						a(href="tel:+74955853865") + 7 495 585-38-65
+						a(href="tel:+74955853865") +7 495 585-38-65
 				ul.links
 					li
-						a.icon-search(href="#")
+						a.icon-search(href="search-page.html")
 					li
 						a.icon-twitter(href="#")
-				a.lk-link.icon-user1(href="#") Личный кабинет
+				a.lk-link.icon-user1(href="lk.html") 
+					span Личный кабинет
 			.right-bottom
 				.menu
 					li
@@ -25,9 +26,9 @@ header.header
 					li
 						a(href="#") Компетенции
 					li
-						a(href="#") ИНФОРМАЦИЯ
+						a(href="information.html") ИНФОРМАЦИЯ
 					li
-						a(href="#") Контакты
+						a(href="contact.html") Контакты
 				.lang
 					p.icon-triangle.lang__curr ENG
 					ul.lang-list
@@ -35,4 +36,7 @@ header.header
 							a(href="#") RUS
 						li
 							a(href="#") ENG
-
+				button.burger
+					span.bar.bar1
+					span.bar.bar2
+					span.bar.bar3

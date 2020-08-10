@@ -4,14 +4,30 @@
 	.container
 		display: flex
 		justify-content: space-between
+		@include mq($max-width: 1000px)
+			flex-wrap: wrap
 	.left
 		width: calc( 100% - 370px )
 		display: flex
+		flex-wrap: wrap
 		justify-content: space-between
+		@include mq($max-width: 1200px)
+			width: 70%
+			padding-right: 30px
+		@include mq($max-width: 1000px)
+			width: 100%
+			margin-bottom: 20px
 		&-block
 			display: flex
 			flex-direction: column
 			justify-content: space-between
+			@include mq($max-width: 1000px)
+				width: 33.3%
+			@include mq($max-width: 700px)
+				width: 50%
+				margin-bottom: 25px
+			@include mq($max-width: 380px)
+				width: 100%
 			&__title
 				text-transform: uppercase
 				color: $white
@@ -19,12 +35,23 @@
 				font-weight: 700
 				font-size: 17px
 				margin-bottom: 110px
+				@include mq($max-width: 1000px)
+					margin-bottom: 25px
+				@include mq($max-width: 575px)
+					margin-bottom: 15px
+					font-size: 14px
 	.social
 		display: flex
 		align-items: center
+		@include mq($max-width: 575px)
+			flex-direction: column
+			align-items: flex-start
+			margin-bottom: 15px
 		&__text
 			color: $white
 			font-size: 16px
+			@include mq($max-width: 575px)
+				margin-bottom: 10px
 		&-list
 			padding-left: 10px
 			li
@@ -51,29 +78,52 @@
 	.mails
 		position: relative
 		padding-left: 50px
+		@include mq($max-width: 575px)
+			padding-left: 30px
 		&::before
 			position: absolute
 			font-size: 16px
 			left: 0
 			top: 7px
 			color: $white
+			@include mq($max-width: 575px)
+				font-size: 12px
 		li
 		a
 			color: $white
 			font-size: 16px
 			line-height: 2.1
+			@include mq($max-width: 575px)
+				font-size: 14px
 			&:hover
 				color: $green2
 	.tels
 		&::before
 			top: 0
 			font-size: 24px
+			@include mq($max-width: 575px)
+				font-size: 18px
 	.right
 		width: 255px
+		@include mq($max-width: 1200px)
+			width: 30%
+		@include mq($max-width: 1000px)
+			width: 100%
 		&-menu
+			@include mq($max-width: 1000px)
+				display: flex
+				flex-wrap: wrap
+			li
+				width: 100%
+				@include mq($max-width: 1000px)
+					width: 31%
+				@include mq($max-width: 575px)
+					width: 48%
 			a
 				color: $white
 				font-size: 17px
 				line-height: 2
+				@include mq($max-width: 575px)
+					font-size: 14px
 				&:hover
 					color: $green2

@@ -1,20 +1,70 @@
 .advantages
+	.line1
+		display: block
+		width: 27%
+		position: absolute
+		right: 0
+		top: 0
+		@include mq($max-width: 1200px)
+			display: none
+	.line2
+		display: block
+		width: 18%
+		position: absolute
+		left: 0
+		bottom: 0
+		@include mq($max-width: 1700px)
+			width: 12%
+		@include mq($max-width: 1200px)
+			display: none
+	.line4
+		position: absolute
+		right: 0
+		top: 0
+		display: block
+		@include mq($max-width: 1700px)
+			width: 28%
+		@include mq($max-width: 1200px)
+			display: none
+	.line5
+		position: absolute
+		bottom: 0
+		left: 0
+		display: block
+		@include mq($max-width: 1700px)
+			width: 28%
+		@include mq($max-width: 1200px)
+			display: none
+	.container
+		position: relative
+		z-index: 3
 	&.type2
 		background: $green1
 		padding: 145px 0 60px
+		position: relative
+		@include mq($max-width: 1500px)
+			padding: 85px 0 40px
+		@include mq($max-width: 700px)
+			padding: 35px 0
 		.top
 			background: none
 			padding: 0
 		.caption
 			margin-bottom: 150px
+			@include mq($max-width: 1500px)
+				margin-bottom: 100px
 	.caption
 		&__title
 			color: $green4
 		&__subtitle
 			color: $black
+			max-width: 830px
 	.top
-		padding: 80px 0 0
+		position: relative
+		padding: 80px 0 50px
 		background: url($imgUrl+'advantages/bg1.jpg') no-repeat center center / cover
+		@include mq($max-width: 1200px)
+			padding: 50px 0 0
 		.list
 			display: flex
 			flex-wrap: wrap
@@ -26,25 +76,46 @@
 			align-items: center
 			text-align: center
 			margin-bottom: 85px
+			@include mq($max-width: 700px)
+				width: 49%
+				margin-bottom: 40px
 			&__icon
 				display: block
 				margin-bottom: 40px
 				height: 90px
 				width: auto
+				@include mq($max-width: 700px)
+					height: 70px
+				@include mq($max-width: 575px)
+					height: 60px
+				@include mq($max-width: 370px)
+					font-size: 40px
 			&__text
 				color: $black
 				letter-spacing: 0.02em
 				font-size: 20px
 				line-height: 1.2
 				font-weight: 700
+				@include mq($max-width: 700px)
+					font-size: 16px
+				@include mq($max-width: 575px)
+					font-size: 14px
 	.bottom
 		background: url($imgUrl+'advantages/bg2.jpg') no-repeat center center / cover
 		padding: 80px 0
+		@include mq($max-width: 1700px)
+			padding: 50px 15px
+		@include mq($max-width: 700px)
+			padding: 15px 10px
 		.list
 			display: flex
 			justify-content: space-between
+			@include mq($max-width: 700px)
+				flex-wrap: wrap
 		.item
 			position: relative
+			@include mq($max-width: 700px)
+				padding: 10px
 			&::before
 				content: '+'
 				color: $green2
@@ -59,8 +130,21 @@
 				font-weight: 700
 				font-size: 90px
 				letter-spacing: 0.02em
+				@include mq($max-width: 1700px)
+					font-size: 75px
+				@include mq($max-width: 1000px)
+					font-size: 50px
+				@include mq($max-width: 575px)
+					font-size: 40px
 			&__text
 				font-size: 24px
 				letter-spacing: 0.05em
 				color: $white
+				@include mq($max-width: 1700px)
+					font-size: 20px
+				@include mq($max-width: 1000px)
+					font-size: 18px
+				@include mq($max-width: 575px)
+					font-size: 14px
+
 

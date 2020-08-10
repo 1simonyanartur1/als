@@ -1,6 +1,42 @@
 .request
 	padding: 130px 0 230px
 	background: url($imgUrl+'request/bg.jpg') no-repeat center bottom / cover
+	position: relative
+	@include mq($max-width: 1500px)
+		padding: 75px 0
+	@include mq($max-width: 700px)
+		padding: 25px 0
+	.line1
+		position: absolute
+		left: 0
+		top: 0
+		@include mq($max-width: 1700px)
+			width: 36%
+		@include mq($max-width: 1500px)
+			width: 24%
+		@include mq($max-width: 1200px)
+			display: none
+	.line2
+		position: absolute
+		right: 0
+		bottom: 0
+		@include mq($max-width: 1700px)
+			width: 36%
+		@include mq($max-width: 1500px)
+			width: 20%
+		@include mq($max-width: 1200px)
+			display: none
+	.line3
+		position: absolute
+		right: 0
+		bottom: 0
+		display: block
+		@include mq($max-width: 1700px)
+			width: 30%
+		@include mq($max-width: 1200px)
+			display: none
+	&.type2
+		background: url($imgUrl+'request/bg2.jpg') no-repeat center bottom / cover
 	.caption
 		&__title
 			font-weight: 400
@@ -10,9 +46,17 @@
 				font-weight: 300
 				color: $green3
 				text-transform: uppercase
+				@include mq($max-width: 1700px)
+					font-size: 50px
+				@include mq($max-width: 700px)
+					font-size: 35px
+				@include mq($max-width: 575px)
+					font-size: 28px
 		&__line
 			background: $green3
 			margin: 30px 0 90px
+			@include mq($max-width: 1200px)
+				margin: 30px 0
 	.container
 		max-width: 900px
 		position: relative
@@ -20,6 +64,8 @@
 		padding: 75px 70px 50px
 		position: relative
 		z-index: 2
+		@include mq($max-width: 1200px)
+			padding: 25px
 		&:before
 			content: ''
 			display: block
@@ -54,6 +100,8 @@
 					color: $green4
 					letter-spacing: 0.05em !important
 					text-transform: none !important
+					@include mq($max-width: 700px)
+						font-size: 24px !important
 	.form
 		display: flex
 		flex-wrap: wrap
@@ -62,16 +110,27 @@
 		&-left,
 		&-right
 			width: 360px
+			@include mq($max-width: 1000px)
+				width: 49%
+			@include mq($max-width: 800px)
+				width: 100%
 		&-item
 			width: 100%
 			margin-bottom: 30px
 			position: relative
+			@include mq($max-width: 800px)
+				margin-bottom: 15px
 			&.icon-user2
-				font-size: 20px
+				&:before
+					font-size: 20px
+					right: 10px
 			&.icon-tel
-				font-size: 20px
+				&:before
+					font-size: 18px
+					right: 10px
 			&.icon-suitcase
-				font-size: 20px
+				&:before
+					font-size: 20px
 			&:before
 				position: absolute
 				color: $green3
@@ -100,6 +159,8 @@
 		&__btn
 			display: block
 			margin-top: 70px
+			@include mq($max-width: 1500px)
+				margin-top: 30px
 		.checkbox
 			&__mark
 				color: $black

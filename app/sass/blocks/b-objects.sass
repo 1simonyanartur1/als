@@ -1,9 +1,13 @@
 .b-objects
 	background: url($imgUrl+'objects/bg.jpg') no-repeat center center / cover
 	padding: 50px 0 90px
+	@include mq($max-width: 1700px)
+		padding: 45px 0
 	.caption
 		margin-bottom: 60px
 		text-align: center
+		@include mq($max-width: 700px)
+			margin-bottom: 30px
 	.inner
 		display: flex
 		flex-wrap: wrap
@@ -22,6 +26,11 @@
 		text-align: center
 		line-height: 1.4
 		margin-bottom: 20px
+		@include mq($max-width: 700px)
+			width: 49%
+		@include mq($max-width: 575px)
+			font-size: 14px
+			height: 70px
 		&:hover
 			color: $green2
 			border-color: $green2
