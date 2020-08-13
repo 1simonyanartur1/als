@@ -22,16 +22,13 @@
 		li
 			display: block
 			width: 100%
-			&:not(:last-child)
-				a
-					border-bottom: 2px solid $green3
 		a
 			display: block
 			width: 100%
 			font-weight: 700
 			text-transform: uppercase
 			color: $green3
-			line-height: 2
+			line-height: 2.5
 			padding: 2px 15px
 			&.active,
 			&:hover
@@ -78,3 +75,31 @@
 				background: $green4
 
 
+.question
+	padding: 30px 10px
+	background: #E0E2E3
+	border: 2px solid #E0E2E3
+	color: $green4
+	&__title
+		text-transform: uppercase
+		letter-spacing: 0.05em
+		font-size: 34px
+		font-weight: 700
+		line-height: 1.3
+		@include mq($max-width: 1200px)
+			font-size: 24px
+	&__subtitle
+		font-size: 34px
+		font-weight: 400
+		line-height: 1.3
+		margin-bottom: 30px
+		@include mq($max-width: 1200px)
+			font-size: 2px
+	&__btn
+		background: $green3
+		padding: 15px 25px
+		text-align: center
+		color: $white
+		letter-spacing: 0.04em
+		font-size: 18px
+		font-weight: 700

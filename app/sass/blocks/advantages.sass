@@ -49,10 +49,27 @@
 		.top
 			background: none
 			padding: 0
-		.caption
-			margin-bottom: 150px
-			@include mq($max-width: 1500px)
-				margin-bottom: 100px
+			.caption
+				margin-bottom: 150px
+				@include mq($max-width: 1500px)
+					margin-bottom: 100px
+		.caption2
+			display: flex
+			flex-direction: column
+			align-items: center
+			text-align: center
+			.caption__title
+				font-size: 45px
+				font-weight: 400
+				@include mq($max-width: 700px)
+					font-size: 35px
+				@include mq($max-width: 575px)
+					font-size: 28px
+			.caption__line
+				width: 70px
+				margin: 55px 0
+				@include mq($max-width: 1500px)
+					margin: 30px 0
 	.caption
 		&__title
 			color: $green4

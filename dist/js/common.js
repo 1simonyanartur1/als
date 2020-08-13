@@ -25,6 +25,8 @@
 			dots: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
+			speed: 1000,
+			cssEase: 'ease',
 			infinite: true
 		});
 

@@ -143,6 +143,27 @@
 			font-size: 80px
 		@include mq($max-width: 575px)
 			font-size: 50px
+	.btns-wrap
+		position: absolute
+		right: 0
+		top: 0
+		z-index: 2
+		width: 205px
+		margin: 15px 0
+		@include mq($max-width: 1200px)
+			width: 100%
+			position: static
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+		p
+			color: $white
+			font-size: 18px
+			line-height: 1.3
+			letter-spacing: 0.02em
+		.btns
+			position: static
+
 
 .breadcrumbs
 	ul

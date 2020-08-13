@@ -102,7 +102,7 @@ a {
 
 .btn4 {
   color: #fff;
-  width: 255px;
+  width: 205px;
   text-align: center;
   border: 2px solid #fff;
   background: none;
@@ -359,6 +359,32 @@ body::-webkit-scrollbar-thumb:hover,
     @media only screen and (max-width: 575px) {
       .heading__bgtitle {
         font-size: 50px; } }
+  .heading .btns-wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    width: 205px;
+    margin: 15px 0; }
+    @media only screen and (max-width: 1200px) {
+      .heading .btns-wrap {
+        width: 100%;
+        position: static;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+    .heading .btns-wrap p {
+      color: #fff;
+      font-size: 18px;
+      line-height: 1.3;
+      letter-spacing: 0.02em; }
+    .heading .btns-wrap .btns {
+      position: static; }
 
 .breadcrumbs ul li {
   display: inline-block; }
@@ -1577,11 +1603,38 @@ body::-webkit-scrollbar-thumb:hover,
   .advantages.type2 .top {
     background: none;
     padding: 0; }
-  .advantages.type2 .caption {
-    margin-bottom: 150px; }
-    @media only screen and (max-width: 1500px) {
-      .advantages.type2 .caption {
-        margin-bottom: 100px; } }
+    .advantages.type2 .top .caption {
+      margin-bottom: 150px; }
+      @media only screen and (max-width: 1500px) {
+        .advantages.type2 .top .caption {
+          margin-bottom: 100px; } }
+  .advantages.type2 .caption2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center; }
+    .advantages.type2 .caption2 .caption__title {
+      font-size: 45px;
+      font-weight: 400; }
+      @media only screen and (max-width: 700px) {
+        .advantages.type2 .caption2 .caption__title {
+          font-size: 35px; } }
+      @media only screen and (max-width: 575px) {
+        .advantages.type2 .caption2 .caption__title {
+          font-size: 28px; } }
+    .advantages.type2 .caption2 .caption__line {
+      width: 70px;
+      margin: 55px 0; }
+      @media only screen and (max-width: 1500px) {
+        .advantages.type2 .caption2 .caption__line {
+          margin: 30px 0; } }
 
 .advantages .caption__title {
   color: #066460; }
@@ -1714,7 +1767,8 @@ body::-webkit-scrollbar-thumb:hover,
           font-size: 14px; } }
 
 .partners {
-  padding: 85px 0; }
+  padding: 85px 0;
+  background: url("../img/partners/bg.jpg") no-repeat center bottom/cover; }
   @media only screen and (max-width: 1700px) {
     .partners {
       padding: 50px 0; } }
@@ -2785,7 +2839,8 @@ body::-webkit-scrollbar-thumb:hover,
     margin-left: 130px; }
   .office .caption__subtitle {
     color: #000;
-    font-size: 24px; }
+    font-size: 24px;
+    line-height: 1.8; }
     @media only screen and (max-width: 1200px) {
       .office .caption__subtitle {
         font-size: 20px; } }
@@ -2825,6 +2880,8 @@ body::-webkit-scrollbar-thumb:hover,
     @media only screen and (max-width: 400px) {
       .office .map-block {
         width: 100%; } }
+    .office .map-block.active .map-block-inner {
+      display: block; }
     .office .map-block.rus {
       right: 30%;
       top: 25%; }
@@ -2958,7 +3015,8 @@ body::-webkit-scrollbar-thumb:hover,
       padding: 30px 0; } }
   .inventors .caption__subtitle {
     color: #000;
-    font-size: 24px; }
+    font-size: 24px;
+    line-height: 1.8; }
     @media only screen and (max-width: 1500px) {
       .inventors .caption__subtitle {
         font-size: 20px; } }
@@ -3065,7 +3123,7 @@ body::-webkit-scrollbar-thumb:hover,
         justify-content: center; } }
   .why-we .item {
     width: 25%;
-    padding: 0 15px;
+    padding: 0 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3097,8 +3155,7 @@ body::-webkit-scrollbar-thumb:hover,
       font-weight: 700;
       font-size: 20px;
       line-height: 1.2;
-      color: #000;
-      word-break: break-all; }
+      color: #000; }
       @media only screen and (max-width: 1200px) {
         .why-we .item__text {
           font-size: 16px; } }
@@ -3751,15 +3808,13 @@ body::-webkit-scrollbar-thumb:hover,
   .information-menu li {
     display: block;
     width: 100%; }
-    .information-menu li:not(:last-child) a {
-      border-bottom: 2px solid #17A9A3; }
   .information-menu a {
     display: block;
     width: 100%;
     font-weight: 700;
     text-transform: uppercase;
     color: #17A9A3;
-    line-height: 2;
+    line-height: 2.5;
     padding: 2px 15px; }
     .information-menu a.active, .information-menu a:hover {
       color: #fff;
@@ -3822,3 +3877,34 @@ body::-webkit-scrollbar-thumb:hover,
     .information-list a:hover {
       color: #fff;
       background: #066460; }
+
+.question {
+  padding: 30px 10px;
+  background: #E0E2E3;
+  border: 2px solid #E0E2E3;
+  color: #066460; }
+  .question__title {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.3; }
+    @media only screen and (max-width: 1200px) {
+      .question__title {
+        font-size: 24px; } }
+  .question__subtitle {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 30px; }
+    @media only screen and (max-width: 1200px) {
+      .question__subtitle {
+        font-size: 2px; } }
+  .question__btn {
+    background: #17A9A3;
+    padding: 15px 25px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.04em;
+    font-size: 18px;
+    font-weight: 700; }
