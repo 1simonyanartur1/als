@@ -7,15 +7,11 @@
 			if ($st > $scrollPos) {
 				// Скролл Вниз
 				$('.header').addClass('scroll');
-				// $('.to-top').removeClass('show');
 			} else {
 				// Скролл Вверх
-				// $('.header').removeClass('scroll');
-				// $('.to-top').addClass('show');
 			}
 			if ($st == 0) {
 				$('.header').removeClass('scroll');
-				// $('.to-top').removeClass('show');
 			}
 			$scrollPos = $st;
 		});
@@ -27,7 +23,9 @@
 			slidesToScroll: 1,
 			speed: 1000,
 			cssEase: 'ease',
-			infinite: true
+			infinite: true,
+			autoplay: true,
+			autoplaySpeed: 5000,
 		});
 
 		$(document).on('click', '.header .lang', function () {
@@ -48,7 +46,7 @@
 			prevArrow: '<button class="icon-arrow2 left"></button>',
 			nextArrow: '<button class="icon-arrow2 right"></button>',
 			slidesToScroll: 1,
-			infinite: false,
+			infinite: true,
 			rows: 3,
 			responsive: [
 				{
@@ -116,6 +114,15 @@
 					$(this).show();
 				}
 			});
+		});
+
+		$('.map-block').on('mouseover', function() {
+			$('.map-block').removeClass('active');
+			$(this).addClass('active');
+		});
+		$('.contact .item').on('mouseover', function() {
+			$('.contact .item').removeClass('active');
+			$(this).addClass('active');
 		});
 
 	});

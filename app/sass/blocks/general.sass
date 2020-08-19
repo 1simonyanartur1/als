@@ -42,10 +42,10 @@
 			margin: 20px 0
 	&__subtitle
 		font-size: 24px
-		line-height: 1.2
+		line-height: 1.8
 		font-weight: 400
 		letter-spacing: 0.05em
-		@include mq($max-width: 1700px)
+		@include mq($max-width: 1500px)
 			font-size: 20px
 		@include mq($max-width: 575px)
 			font-size: 16px
@@ -127,6 +127,9 @@
 					margin-right: 0
 					margin-bottom: 1%
 			a
+				min-width: 205px
+				padding: 15px
+				width: 100%
 				@include mq($max-width: 575px)
 					width: 100%
 	&__bgtitle

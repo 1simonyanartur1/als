@@ -64,16 +64,18 @@
 		padding: 75px 70px 50px
 		position: relative
 		z-index: 2
+		margin-left: 20px
 		@include mq($max-width: 1200px)
 			padding: 25px
+			margin-left: 0
 		&:before
 			content: ''
 			display: block
 			position: absolute
-			left: -10px
-			top: -10px
-			bottom: 20px
-			right: 10px
+			left: -20px
+			top: -20px
+			bottom: 30px
+			right: 30px
 			z-index: -2
 			background: $green4
 			clip-path: polygon(100% 0, 100% 73%, 83% 100%, 0 100%, 0 0)

@@ -181,7 +181,6 @@
 		flex-wrap: wrap
 	.item
 		width: 33.3%
-		background: url($imgUrl+'contact/item-bg.jpg') no-repeat center center / cover
 		min-height: 670px
 		@include mq($max-width: 1200px)
 			width: 48%
@@ -191,7 +190,8 @@
 		@include mq($max-width: 575px)
 			min-height: 200px
 			border-top: 1px solid $green4
-		&:hover
+		&:hover,
+		&.active
 			.item-inner
 				background: none
 			.item__title

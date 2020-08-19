@@ -54,6 +54,7 @@
 	.map-block
 		position: absolute
 		z-index: 1
+		cursor: pointer
 		@include mq($max-width: 700px)
 			position: static
 			width: 48%
@@ -76,9 +77,9 @@
 		&.usa
 			left: 22%
 			top: 32%
-		&:hover
-			.map-block-inner
-				display: block
+		// &:hover
+		// 	.map-block-inner
+		// 		display: block
 		&__title
 			color: $green4
 			font-size: 30px
