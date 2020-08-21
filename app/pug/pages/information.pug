@@ -12,6 +12,11 @@ html
 				.container
 					h1.heading__title ИНФОРМАЦИЯ
 					h2.heading__bgtitle ИНФОРМАЦИЯ
+					.btns-wrap
+						h2 <b>Есть вопросы?</b> Задайте их нам
+						ul.btns
+							li
+								a.btn4(href="#b-contact") Оставить заявку
 				.breadcrumbs
 					.container
 						ul
@@ -47,10 +52,10 @@ html
 									a(href="#") Авторское право
 								li
 									a(href="#") Ускоренная регистрация
-							.question
-								p.question__title Есть вопросы?
-								p.question__subtitle Задайте их нам
-								a.question__btn(href="#") Задайте их нам
+							//- .question
+							//- 	p.question__title Есть вопросы?
+							//- 	p.question__subtitle Задайте их нам
+							//- 	a.question__btn(href="#") Задайте их нам
 						.page-content
 							.text-container.active(data-id="tab1")
 								h2 Парижская конвенция
@@ -76,7 +81,7 @@ html
 							li
 								a(href="#") Защита прав <br> правообладателя
 
-			section.request.type2
+			section.request.type2#b-contact
 				img.line3(src=imgUrl+"lines/line11.png", alt="")
 				.container
 					.inner
