@@ -1,0 +1,49 @@
+.popup.mfp-hide#callback
+	.caption
+		h2.caption__title Оставьте заявку
+		h3.caption__subtitle и наши специалисты Вас проконсультируют
+	form.form(action="#")
+		.form-item.full.icon-user2
+			input.form__input(type="text" name="callback-name" placeholder="Фамилия Имя Отчество *")
+		.form-item.half.icon-tel
+			input.form__input(type="tel" name="callback-tel" placeholder="Телефон *")
+		.form-item.half.icon-mail
+			input.form__input(type="email" name="callback-email" placeholder="Email *")
+		.form-item.full
+			textarea.form__textarea(name="callback-text" placeholder="Комментарии")
+		.form-item.full
+			label.checkbox
+				input.checkbox__input(type="checkbox" checked)
+				span.checkbox__mark Я соглашаюсь с 
+					a(href="#") условиями обработки персональных данных 
+		.form-item.full
+			button.form__btn.btn3 Отправить
+.popup.mfp-hide#callback2
+	.caption
+		h2.caption__title Заполните поля <br> формы
+			span  и мы вскоре с Вами свяжемся
+	form.form(action="#")
+		.form-left
+			.form-item.full.icon-user2
+				input.form__input(type="text" name="callback2-name" placeholder="Фамилия Имя Отчество *")
+			.form-item.full.icon-tel
+				input.form__input(type="tel" name="callback2-tel" placeholder="Телефон *")
+			.form-item.full.icon-mail
+				input.form__input(type="email" name="callback2-email" placeholder="Email *")
+		.form-right
+			.form-item.middle.icon-suitcase
+				input.form__input(type="text" name="callback2-company" placeholder="Компания")
+			.form-item.full
+				textarea.form__textarea(name="callback2-text" placeholder="Комментарии")
+		.form-item.full
+			label.checkbox
+				input.checkbox__input(type="checkbox" checked)
+				span.checkbox__mark Я соглашаюсь с 
+					a(href="#") условиями обработки персональных данных 
+		.form-item.full
+			button.form__btn.btn3 Отправить
+
+.popup.mfp-hide#thanks
+	h2.popup__title Спасибо
+	h2.popup__subtitle Ожидайте звонка. Перезвоним в течении 10 минут
+

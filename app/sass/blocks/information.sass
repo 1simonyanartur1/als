@@ -15,25 +15,45 @@
 		&.active
 			display: block
 	&-menu
-		border: 2px solid $green3
-		margin-bottom: 50px
+		// border: 2px solid $green3
+		// margin-bottom: 50px
+		padding: 35px 15px
+		background: #E0E2E3
+		margin-bottom: 30px
 		@include mq($max-width: 800px)
 			margin-bottom: 25px
 		li
 			display: block
 			width: 100%
+			&:not(:last-child)
+				margin-bottom: 5px
 		a
-			display: block
-			width: 100%
-			font-weight: 700
+			color: $green4
 			text-transform: uppercase
-			color: $green3
-			line-height: 2.5
-			padding: 2px 15px
+			font-size: 16px
+			line-height: 1.5
+			position: relative
+			margin-bottom: 12px
+			cursor: pointer
+			transition: all .3s ease-out
+			padding-right: 20px
+			font-weight: 700
+			@include mq($max-width: 1200px)
+				font-size: 14px
 			&.active,
 			&:hover
-				color: $white
-				background: $green3
+				color: $black
+			// display: block
+			// width: 100%
+			// font-weight: 700
+			// text-transform: uppercase
+			// color: $green3
+			// line-height: 2.5
+			// padding: 2px 15px
+			// &.active,
+			// &:hover
+			// 	color: $white
+			// 	background: $green3
 	.bottom
 		background: rgba(23, 169, 163, 0.15)
 	&-list

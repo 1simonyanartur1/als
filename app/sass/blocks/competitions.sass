@@ -13,6 +13,9 @@
 			color: $black
 			font-size: 24px
 			line-height: 1.8
+			display: none
+			&.active
+				display: block
 			@include mq($max-width: 1200px)
 				font-size: 20px
 			@include mq($max-width: 575px)
@@ -58,9 +61,11 @@
 				background: $green4
 
 	.inner
-		display: flex
 		justify-content: space-between
 		flex-wrap: wrap
+		display: none
+		&.active
+			display: flex
 	.item
 		width: 49%
 		height: 305px

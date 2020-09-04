@@ -1,7 +1,9 @@
 .about
-	padding: 95px 0 200px
+	padding: 160px 0 170px
 	background: url($imgUrl+'about/bg.jpg') no-repeat center center / cover
 	position: relative
+	@include mq($max-width: 1500px)
+		padding: 100px 0 170px
 	@include mq($max-width: 1200px)
 		padding: 75px 0
 	@include mq($max-width: 700px)

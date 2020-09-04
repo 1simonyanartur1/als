@@ -12,6 +12,11 @@
 		padding: 100px 0
 		@include mq($max-width: 1500px)
 			padding: 50px 0
+	.caption
+		&__title
+			color: $green4
+			&:hover
+				color: $black
 	.line1
 		position: absolute
 		right: 0
@@ -230,7 +235,7 @@
 
 
 .news
-	padding: 95px 0
+	padding: 55px 0 95px
 	@include mq($max-width: 1500px)
 		padding: 40px 0
 	.year

@@ -24,11 +24,14 @@
       <div class="right">
         <div class="right-top">
           <ul class="btns">
-            <li><a class="btn1 anchor" href="#b-contact">Оставить заявку</a></li>
+            <li><a class="btn1 popup-link" href="#callback">Оставить заявку</a></li>
           </ul>
           <ul class="tels">
             <li><a href="tel:+74955853865">+7 495 585-38-65</a></li>
           </ul>
+          <div class="search">
+            <form action=""><input type="search" placeholder="Поиск"><button class="icon-search"></button></form>
+          </div>
           <ul class="links">
             <li><a class="icon-search" href="search-page.html"></a></li>
             <li><a class="icon-twitter" href="#"></a></li>
@@ -82,19 +85,19 @@
               <p class="item__text">20 лет практики защиты интеллектуальной собственности в ведущих странах мира</p>
             </li>
             <li class="item"><img class="item__icon" src="../img/advantages/icon-advantages2.svg" alt="">
-              <p class="item__text">Дорожим своей репутацией и репутацией наших партнеров</p>
+              <p class="item__text">Дорожим своей репутацией <br> и репутацией наших партнеров</p>
             </li>
             <li class="item"><img class="item__icon" src="../img/advantages/icon-advantages3.svg" alt="">
-              <p class="item__text">Международная команда юристов и поверенных</p>
+              <p class="item__text">Международная команда <br> юристов и поверенных</p>
             </li>
             <li class="item"><img class="item__icon" src="../img/advantages/icon-advantages4.svg" alt="">
               <p class="item__text">Контроль и регистрация всей интеллектуальной собственности клиента через личный кабинет</p>
             </li>
             <li class="item"><img class="item__icon" src="../img/advantages/icon-advantages5.svg" alt="">
-              <p class="item__text">Абсолютная конфиденциальность и гарантии</p>
+              <p class="item__text">Абсолютная <br> конфиденциальность <br> и гарантии</p>
             </li>
             <li class="item"><img class="item__icon" src="../img/advantages/icon-advantages6.svg" alt="">
-              <p class="item__text">Дистанционное цифровое взаимодействие</p>
+              <p class="item__text">Дистанционное цифровое <br> взаимодействие</p>
             </li>
           </ul>
         </div>
@@ -103,7 +106,7 @@
     <section class="about"><img class="line1" src="../img/lines/line16.png" alt=""><img class="line2" src="../img/lines/line17.png" alt="">
       <div class="container">
         <div class="inner">
-          <p class="about__text change-scroll">Компания объединила патентных поверенных и юристов из разных стран мира. <br> В ALS PARTNERS работают патентные поверенные, юристы, высококлассные специалисты в области IT-технологий, машиностроения, медицины, химии и биотехнологий, а также профессиональные переводчики из разных стран мира.</p>
+          <p class="about__text change-scroll">Компания объединила патентных поверенных и юристов <br> из разных стран мира. В ALS PARTNERS работают <br> патентные поверенные, юристы, высококлассные <br> специалисты в области IT-технологий, машиностроения, <br> медицины, химии и биотехнологий, а также <br> профессиональные переводчики из разных стран мира.</p>
         </div>
       </div>
     </section>
@@ -113,7 +116,7 @@
           <div class="caption">
             <h2 class="caption__title">Наши представительства</h2>
             <div class="caption__line"></div>
-            <p class="caption__subtitle">В компетенцию профессионалов компании входит оказание услуг, связанных с регистрацией объектов интеллектуальной собственности, защитой и распоряжением интеллектуальной собственностью по всему миру.<br><br> Патентные поверенные и юристы нашей компании компетентны в оказании полного спектра услуг, связанных с регистрацией и защитой интеллектуальной собственности на международной арене.</p>
+            <p class="caption__subtitle">В компетенцию профессионалов компании входит оказание услуг, связанных с регистрацией <br> объектов интеллектуальной собственности, защитой и распоряжением интеллектуальной <br> собственностью по всему миру.<br><br> Патентные поверенные и юристы нашей компании компетентны в оказании полного <br> спектра услуг, связанных с регистрацией и защитой интеллектуальной собственности <br> на международной арене.</p>
           </div>
         </div>
       </div>
@@ -160,7 +163,7 @@
           <h3 class="caption__title2">Оставьте нам заявку <br> и мы с Вами свяжемся</h3>
           <div class="caption__line"></div>
           <ul class="btns">
-            <li><a class="btn3" href="#">Оставить заявку</a></li>
+            <li><a class="btn3 popup-link" href="#callback2">Оставить заявку</a></li>
           </ul>
         </div>
       </div>
@@ -203,6 +206,42 @@
       </div>
     </div>
   </footer>
+  <div class="popup mfp-hide" id="callback">
+    <div class="caption">
+      <h2 class="caption__title">Оставьте заявку</h2>
+      <h3 class="caption__subtitle">и наши специалисты Вас проконсультируют</h3>
+    </div>
+    <form class="form" action="#">
+      <div class="form-item full icon-user2"><input class="form__input" type="text" name="callback-name" placeholder="Фамилия Имя Отчество *"></div>
+      <div class="form-item half icon-tel"><input class="form__input" type="tel" name="callback-tel" placeholder="Телефон *"></div>
+      <div class="form-item half icon-mail"><input class="form__input" type="email" name="callback-email" placeholder="Email *"></div>
+      <div class="form-item full"><textarea class="form__textarea" name="callback-text" placeholder="Комментарии"></textarea></div>
+      <div class="form-item full"><label class="checkbox"><input class="checkbox__input" type="checkbox" checked><span class="checkbox__mark">Я соглашаюсь с <a href="#">условиями обработки персональных данных </a></span></label></div>
+      <div class="form-item full"><button class="form__btn btn3">Отправить</button></div>
+    </form>
+  </div>
+  <div class="popup mfp-hide" id="callback2">
+    <div class="caption">
+      <h2 class="caption__title">Заполните поля <br> формы<span> и мы вскоре с Вами свяжемся</span></h2>
+    </div>
+    <form class="form" action="#">
+      <div class="form-left">
+        <div class="form-item full icon-user2"><input class="form__input" type="text" name="callback2-name" placeholder="Фамилия Имя Отчество *"></div>
+        <div class="form-item full icon-tel"><input class="form__input" type="tel" name="callback2-tel" placeholder="Телефон *"></div>
+        <div class="form-item full icon-mail"><input class="form__input" type="email" name="callback2-email" placeholder="Email *"></div>
+      </div>
+      <div class="form-right">
+        <div class="form-item middle icon-suitcase"><input class="form__input" type="text" name="callback2-company" placeholder="Компания"></div>
+        <div class="form-item full"><textarea class="form__textarea" name="callback2-text" placeholder="Комментарии"></textarea></div>
+      </div>
+      <div class="form-item full"><label class="checkbox"><input class="checkbox__input" type="checkbox" checked><span class="checkbox__mark">Я соглашаюсь с <a href="#">условиями обработки персональных данных </a></span></label></div>
+      <div class="form-item full"><button class="form__btn btn3">Отправить</button></div>
+    </form>
+  </div>
+  <div class="popup mfp-hide" id="thanks">
+    <h2 class="popup__title">Спасибо</h2>
+    <h2 class="popup__subtitle">Ожидайте звонка. Перезвоним в течении 10 минут</h2>
+  </div>
   <script src="../js/libs.js"></script>
   <script src="../js/common.js"></script>
 </body>

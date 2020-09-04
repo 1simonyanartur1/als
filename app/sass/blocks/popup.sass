@@ -1,0 +1,117 @@
+.mfp-container
+	padding: 0
+	margin: 0
+.popup
+	padding: 35px 30px
+	background: $green1
+	width: 540px
+	margin: 50px auto
+	position: relative
+	&#callback2
+		width: 900px
+		@include mq($max-width: 950px)
+			width: 540px
+		@include mq($max-width: 575px)
+			width: 100%
+		.form__textarea
+			min-height: 130px
+		.caption
+			&__title
+				font-size: 60px
+				line-height: 1.2
+				@include mq($max-width: 950px)
+					font-size: 30px
+				@include mq($max-width: 575px)
+					font-size: 24px
+				span
+					@include mq($max-width: 950px)
+						font-size: 18px
+					@include mq($max-width: 575px)
+						font-size: 16px
+	@include mq($max-width: 575px)
+		width: 100%
+		margin: 50px 0
+		padding: 15px
+	.caption
+		color: $green4
+		margin-bottom: 17px
+		&__title
+			font-size: 35px
+			@include mq($max-width: 575px)
+				font-size: 28px
+		&__subtitle
+			font-size: 20px
+			@include mq($max-width: 575px)
+				font-size: 16px
+	.form
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+		justify-content: space-between
+		&-left,
+		&-right
+			width: 49%
+			@include mq($max-width: 950px)
+				width: 100%
+		&-item
+			width: 100%
+			margin-bottom: 30px
+			position: relative
+			@include mq($max-width: 800px)
+				margin-bottom: 15px
+			&.full
+				width: 100%
+			&.half
+				width: 49%
+				@include mq($max-width: 575px)
+					width: 100%
+			&.icon-user2
+				&:before
+					font-size: 20px
+					right: 10px
+			&.icon-tel
+				&:before
+					font-size: 18px
+					right: 10px
+			&.icon-suitcase
+				&:before
+					font-size: 20px
+			&:before
+				position: absolute
+				color: $green3
+				top: 50%
+				right: 15px
+				transform: translate(0, -50%)
+		&__input,
+		&__textarea
+			background: rgba(255, 255, 255, .65)
+			border: 1px solid #FFFFFF
+			font: 16px 'Proxima', sans-serif
+			color: $black
+			display: block
+			width: 100%
+			height: 50px
+			padding: 0 50px 0 15px
+			transition: all .3s ease-out
+			&:hover,
+			&:focus
+				border: 1px solid $green3
+			&::placeholder
+				color: $black
+		&__textarea
+			min-height: 210px
+			padding: 15px
+		&__btn
+			display: block
+			margin-left: auto
+		.checkbox
+			&__mark
+				color: $black
+				a
+					color: $green3
+					text-decoration: underline
+					&:hover
+						text-decoration: none
+
+
+

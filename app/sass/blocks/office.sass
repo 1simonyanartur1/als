@@ -77,9 +77,6 @@
 		&.usa
 			left: 22%
 			top: 32%
-		// &:hover
-		// 	.map-block-inner
-		// 		display: block
 		&__title
 			color: $green4
 			font-size: 30px
@@ -93,17 +90,6 @@
 				font-size: 35px
 				@include mq($max-width: 575px)
 					font-size: 25px
-			&:after
-				content: ''
-				display: block
-				width: 70px
-				height: 1px
-				background: $green4
-				position: absolute
-				left: 50px
-				bottom: -5px
-				@include mq($max-width: 575px)
-					left: 40px
 		&-inner
 			position: absolute
 			background: $white
@@ -123,6 +109,7 @@
 			position: relative
 			display: block
 			padding-left: 40px
+			margin-bottom: 10px
 			@include mq($max-width: 575px)
 				padding-left: 30px
 			&:before
@@ -136,6 +123,7 @@
 			li
 				display: block
 			a
+				font-weight: 400
 				display: block
 				&:hover
 					color: $green2
@@ -156,6 +144,7 @@
 			li
 				display: block
 			a
+				font-weight: 400
 				display: block
 				&:hover
 					color: $green2

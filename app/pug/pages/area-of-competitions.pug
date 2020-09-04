@@ -24,29 +24,64 @@ html
 				.container
 					.caption
 						.caption__line
-						p.caption__text В компетенцию профессионалов компании входит оказание услуг, связанных с регистрацией объектов интеллектуальной собственности, защитой и распоряжением интеллектуальной собственности по всему миру.
+						p.caption__text(data-id="tab1").active В компетенцию профессионалов компании входит оказание услуг, связанных с регистрацией объектов интеллектуальной собственности, защитой и распоряжением интеллектуальной собственности <br> по всему миру.
+						p.caption__text(data-id="tab2") В компетенцию профессионалов компании входит оказание услуг, связанных с регистрацией объектов интеллектуальной собственности, защитой и распоряжением интеллектуальной собственности по всему миру. В компетенцию профессионалов компании входит оказание услуг, связанных с регистрацией объектов интеллектуальной собственности, защитой и распоряжением интеллектуальной собственности по всему миру. В компетенцию профессионалов компании входит оказание услуг, связанных с регистрацией объектов интеллектуальной собственности, защитой и распоряжением интеллектуальной собственности по всему миру.
 					ul.btns
 						li
-							a.active(href="area-of-competitions.html") НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ
+							a.active(href="#" data-id="tab1") НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ
 						li
-							a(href="objects-competitions.html") ОБЪЕКТЫ ИНТЕЛЛЕКТУАЛЬНОЙ СОБСТВЕННОСТИ
-					.inner
-						.item(style="background: url('../img/competitions/img1.jpg') no-repeat center center / cover")
+							a(href="#" data-id="tab2") ОБЪЕКТЫ ИНТЕЛЛЕКТУАЛЬНОЙ СОБСТВЕННОСТИ
+					.inner.active(data-id="tab1")
+						a.item(href="service.html" style="background: url('../img/competitions/img1.jpg') no-repeat center center / cover")
 							p.item__title УПРАВЛЕНИЕ <br> ИНТЕЛЛЕКТУАЛЬНОЙ <br> СОБСТВЕННОСТИ
 							p.item__text Регистрация изобретений, полезных моделей, промышленных образцов, товарных знаков и программ для ЭВМ 
-							a.item__link(href="objects-competitions") Читать подробнее
-						.item(style="background: url('../img/competitions/img1.jpg') no-repeat center center / cover")
+							.item__link Читать подробнее
+						a.item(href="service.html" style="background: url('../img/competitions/img1.jpg') no-repeat center center / cover")
 							p.item__title УПРАВЛЕНИЕ <br> ИНТЕЛЛЕКТУАЛЬНОЙ <br> СОБСТВЕННОСТИ
 							p.item__text Регистрация изобретений, полезных моделей, промышленных образцов, товарных знаков и программ для ЭВМ 
-							a.item__link(href="objects-competitions") Читать подробнее
-						.item(style="background: url('../img/competitions/img2.jpg') no-repeat center center / cover")
+							.item__link Читать подробнее
+						a.item(href="service.html" style="background: url('../img/competitions/img2.jpg') no-repeat center center / cover")
 							p.item__title ЗАЩИТА <br> ИНТЕЛЛЕКТУАЛЬНОЙ <br> СОБСТВЕННОСТИ
 							p.item__text Регистрация изобретений, полезных моделей, промышленных образцов, товарных знаков и программ для ЭВМ 
-							a.item__link(href="objects-competitions") Читать подробнее
-						.item(style="background: url('../img/competitions/img3.jpg') no-repeat center center / cover")
+							.item__link Читать подробнее
+						a.item(href="service.html" style="background: url('../img/competitions/img3.jpg') no-repeat center center / cover")
 							p.item__title ОПТИМИЗАЦИЯ <br> БИЗНЕСА
 							p.item__text Регистрация изобретений, полезных моделей, промышленных образцов, товарных знаков и программ для ЭВМ 
-							a.item__link(href="objects-competitions") Читать подробнее
+							.item__link Читать подробнее
+					.inner(data-id="tab2")
+						a.item(href="service.html" style="background: url('../img/competitions/img4.jpg') no-repeat center center / cover")
+							p.item__title ГЕОГРАФИЧЕСКИЕУКАЗАНИЯ
+							p.item__text Регистрация изобретений, полезных моделей, промышленных образцов, товарных знаков и программ для ЭВМ 
+							.item__link Читать подробнее
+						a.item(href="service.html" style="background: url('../img/competitions/img5.jpg') no-repeat center center / cover")
+							p.item__title ТОВАРНЫЕ ЗНАКИ
+							p.item__text Регистрация изобретений, полезных моделей, промышленных образцов, товарных знаков и программ для ЭВМ 
+							.item__link Читать подробнее
+						a.item(href="service.html" style="background: url('../img/competitions/img6.jpg') no-repeat center center / cover")
+							p.item__title АВТОРСКОЕ ПРАВО
+							p.item__text Регистрация изобретений, полезных моделей, промышленных образцов, товарных знаков и программ для ЭВМ 
+							.item__link Читать подробнее
+						a.item(href="service.html" style="background: url('../img/competitions/img7.jpg') no-repeat center center / cover")
+							p.item__title ПРОГРАММЫ ДЛЯ ЭВМ
+							p.item__text Регистрация изобретений, полезных моделей, промышленных образцов, товарных знаков и программ для ЭВМ 
+							.item__link Читать подробнее
+						a.item(href="service.html" style="background: url('../img/competitions/img8.jpg') no-repeat center center / cover")
+							p.item__title ДИЗАЙН
+							p.item__text Регистрация изобретений, полезных моделей, промышленных образцов, товарных знаков и программ для ЭВМ 
+							.item__link Читать подробнее
+						a.item(href="service.html" style="background: url('../img/competitions/img9.jpg') no-repeat center center / cover")
+							p.item__title ИЗОБРЕТЕНИЯ
+							p.item__text Регистрация изобретений, полезных моделей, промышленных образцов, товарных знаков и программ для ЭВМ 
+							.item__link Читать подробнее
+						a.item(href="service.html" style="background: url('../img/competitions/img10.jpg') no-repeat center center / cover")
+							p.item__title ПОЛЕЗНЫЕ МОДЕЛИ
+							p.item__text Регистрация изобретений, полезных моделей, промышленных образцов, товарных знаков и программ для ЭВМ 
+							.item__link Читать подробнее
+						a.item(href="service.html" style="background: url('../img/competitions/img11.jpg') no-repeat center center / cover")
+							p.item__title Селекционные достижения 
+							p.item__text Регистрация изобретений, полезных моделей, промышленных образцов, товарных знаков и программ для ЭВМ 
+							.item__link Читать подробнее
+
 
 			section.request#b-contact
 				img.line2(src=imgUrl+"lines/line9.png", alt="")

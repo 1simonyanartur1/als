@@ -15,8 +15,8 @@ var path = {
 		pug: './app/pug/**/*.pug',
 		sass: ['./app/sass/**/*.sass'],
 		js: './app/js/*.js',
-		jsLibs: ['./app/libs/jquery/dist/jquery.min.js', './app/libs/slick-carousel/slick/slick.min.js', './app/libs/jquery-nice-select-master/js/jquery.nice-select.min.js', './app/libs/inputmask/dist/jquery.inputmask.bundle.js'],
-		cssLibs: ['./app/libs/slick-carousel/slick/slick.css', './app/libs/jquery-nice-select-master/css/nice-select.css'],
+		jsLibs: ['./app/libs/jquery/dist/jquery.min.js', './app/libs/Magnific-Popup-master/dist/jquery.magnific-popup.min.js', './app/libs/slick-carousel/slick/slick.min.js', './app/libs/jquery-nice-select-master/js/jquery.nice-select.min.js', './app/libs/inputmask/dist/jquery.inputmask.bundle.js'],
+		cssLibs: ['./app/libs/slick-carousel/slick/slick.css', './app/libs/Magnific-Popup-master/dist/magnific-popup.css', './app/libs/jquery-nice-select-master/css/nice-select.css'],
 		deleteLibs: ['./dist/js/libs.js', './dist/css/libs.css']
 	},
 	// Куда компилировать

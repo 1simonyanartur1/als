@@ -32,6 +32,51 @@
 			$(this).find('.lang-list').slideToggle();
 		});
 
+		$(document).on('click', '.header .links .icon-search', function(e) {
+			e.preventDefault();
+			$('.header .search').addClass('active');
+		});
+
+		$('.header .search input').focus(function() {
+			console.log('1');
+		}).blur(function() {
+			console.log('2');
+			$('.header .search').removeClass('active');
+		})
+
+		// , {
+		// }
+
+		$(document).on('click', '.competitions .btns a', function (e) {
+			e.preventDefault();
+			$('.competitions .btns a').removeClass('active');
+			$(this).addClass('active');
+			var id = $(this).data('id');
+
+			$('.competitions .inner').each(function () {
+				if ($(this).data('id') == id) {
+					$(this).addClass('active');
+				} else {
+					$(this).removeClass('active');
+				}
+			});
+			$('.competitions .caption__text').each(function () {
+				if ($(this).data('id') == id) {
+					$(this).addClass('active');
+				} else {
+					$(this).removeClass('active');
+				}
+			});
+		});
+
+		$('.popup-link').magnificPopup({
+			type: 'inline',
+			focus: 'input',
+			showCloseBtn: true,
+			alignTop: true,
+			fixedContentPos: true
+		});
+
 		$('select').niceSelect();
 
 		$('input[type="tel"]').inputmask({
@@ -48,15 +93,13 @@
 			slidesToScroll: 1,
 			infinite: true,
 			rows: 3,
-			responsive: [
-				{
-					breakpoint: 700,
-					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 1
-					}
+			responsive: [{
+				breakpoint: 700,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
 				}
-			]
+			}]
 		});
 
 		$(document).on('click', '.burger', function () {
@@ -116,11 +159,11 @@
 			});
 		});
 
-		$('.map-block').on('mouseover', function() {
+		$('.map-block').on('mouseover', function () {
 			$('.map-block').removeClass('active');
 			$(this).addClass('active');
 		});
-		$('.contact .item').on('mouseover', function() {
+		$('.contact .item').on('mouseover', function () {
 			$('.contact .item').removeClass('active');
 			$(this).addClass('active');
 		});
