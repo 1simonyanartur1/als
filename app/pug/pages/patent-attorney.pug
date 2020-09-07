@@ -1,0 +1,100 @@
+- var imgUrl = '../img/';
+  
+doctype
+html
+	include ../blocks/head.pug
+		title АЛС
+	body
+		include ../blocks/header2.pug
+
+		.page-container
+			section.heading(style="background: url(../img/heading/inventors.jpg) no-repeat center center / cover;")
+				.container
+					h1.heading__title Патентным поверенным
+					h2.heading__bgtitle Патентным поверенным
+					ul.btns
+						li
+							a.btn4(href="#") Заявка на сотрудничество
+				.breadcrumbs
+					.container
+						ul
+							li
+								a(href="#") Главная
+							li
+								a(href="#") Изобретателям
+			
+			section.inventors
+				.container
+					.caption
+						.caption__subtitle Опираясь на мировой опыт и существующий уровень техники, мы готовы предложить изобретателям и рационализаторам доработку и модернизацию идей и технологий, а также помощь в выборе стратегии защиты интеллектуальной собственности, а также оптимизации расходов на нее. <br><br> Мы сотрудничаем с мировыми фондами, поддерживающими стартапы и новые технологии, что дает высокую долю вероятности получения вознаграждения за ценную интеллектуальную деятельность или грант на развитие.
+					ul.links
+						li
+							a(href="service.html") Регистрация изобретения 
+						li
+							a(href="service.html") Предварительная проверка и патентный поиск
+						li
+							a(href="service.html") Патентные исследования
+						li
+							a(href="service.html") Защита прав правообладателя
+						li
+							a(href="service.html") Восстановление и поддержка патента
+						li
+							a(href="service.html") Оценка патента
+						li
+							a(href="service.html") Управление патентом
+						li
+							a(href="service.html") Аннулирование препятствующего патента
+			
+			section.why-we
+				img.line1(src=imgUrl+"lines/line13.png", alt="")
+				.container
+					.caption
+						h2.caption__title Почему с нами стоит работать?
+						.caption__line
+					.inner
+						.item
+							img.item__img(src=imgUrl+"why-we/icon1.svg", alt="")
+							p.item__text Индивидуальный <br> подход
+						.item
+							img.item__img(src=imgUrl+"why-we/icon2.svg", alt="")
+							p.item__text Более 300 <br> коммерциализированных <br> объектов
+						.item
+							img.item__img(src=imgUrl+"why-we/icon3.svg", alt="")
+							p.item__text Оперативное <br> взаимодействие
+						.item
+							img.item__img(src=imgUrl+"why-we/icon4.svg", alt="")
+							p.item__text Сотрудничество <br> с международными фондами <br> развития технологий
+
+			section.callback
+				img.line1(src=imgUrl+"lines/line12.png", alt="")
+				img.line2(src=imgUrl+"lines/line11.png", alt="")
+				.container
+					.inner
+						.caption
+							h2.caption__title Заполните поля <br> формы <span>и мы вскоре с Вами свяжемся</span>
+						form.form(action="#")
+							.form-left
+								.form-item.icon-user2
+									input.form__input(type="text" name="name" placeholder="Фамилия Имя Отчество *")
+								.form-item.icon-tel
+									input.form__input(type="tel" name="tel" placeholder="Телефон *")
+								.form-item.icon-mail
+									input.form__input(type="email" name="email" placeholder="Email *")
+							.form-right
+								.form-item.icon-suitcase
+									input.form__input(type="text" name="company" placeholder="Компания")
+								.form-item
+									textarea.form__textarea(name="" placeholder="Комментарии")
+							.form-item
+								label.checkbox
+									input.checkbox__input(type="checkbox" checked)
+									span.checkbox__mark Я соглашаюсь с 
+										a(href="#") условиями обработки персональных данных 
+							.form-item
+								button.form__btn.btn3 Отправить
+								
+
+
+		include ../blocks/footer.pug
+
+		include ../blocks/scripts.pug

@@ -350,6 +350,7 @@ body::-webkit-scrollbar-thumb:hover,
         .heading .btns li a {
           width: 100%; } }
   .heading__bgtitle {
+    white-space: nowrap;
     position: absolute;
     z-index: 2;
     left: 0;

@@ -44,8 +44,6 @@
 			$('.header .search').removeClass('active');
 		})
 
-		// , {
-		// }
 
 		$(document).on('click', '.competitions .btns a', function (e) {
 			e.preventDefault();
