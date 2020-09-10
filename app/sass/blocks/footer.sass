@@ -55,10 +55,10 @@
 			@include mq($max-width: 575px)
 				margin-bottom: 10px
 		&-list
-			padding-left: 10px
+			padding-left: 16px
 			li
 				display: inline-block
-				margin: 0 10px
+				margin: 0 8px
 			a
 				font-size: 24px
 				color: $white
@@ -102,9 +102,11 @@
 	.tels
 		&::before
 			top: 0
-			font-size: 24px
+			font-size: 21px
 			@include mq($max-width: 575px)
 				font-size: 18px
+	.mails
+		margin-bottom: auto
 	.right
 		width: 255px
 		@include mq($max-width: 1200px)

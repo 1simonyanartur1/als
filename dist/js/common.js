@@ -71,7 +71,7 @@
 			type: 'inline',
 			focus: 'input',
 			showCloseBtn: true,
-			alignTop: true,
+			alignTop: false,
 			fixedContentPos: true
 		});
 
@@ -85,7 +85,7 @@
 		$('.partners .slider').slick({
 			arrows: true,
 			dots: true,
-			slidesToShow: 3,
+			slidesToShow: 4,
 			prevArrow: '<button class="icon-arrow2 left"></button>',
 			nextArrow: '<button class="icon-arrow2 right"></button>',
 			slidesToScroll: 1,

@@ -133,23 +133,23 @@
 			@include mq($max-width: 700px)
 				flex-wrap: wrap
 		.item
-			position: relative
 			@include mq($max-width: 700px)
 				padding: 10px
-			&::before
-				content: '+'
-				color: $green2
-				font-size: 36px
-				font-weight: 300
-				display: block
-				text-align: right
-				margin-right: -10px
 			&__num
 				color: #DCECF8
-				margin-bottom: 30px
 				font-weight: 700
 				font-size: 90px
 				letter-spacing: 0.02em
+				position: relative
+				display: inline-block
+				&::before
+					content: '+'
+					color: $green2
+					font-size: 36px
+					font-weight: 300
+					display: block
+					text-align: right
+					margin-right: -10px
 				@include mq($max-width: 1700px)
 					font-size: 75px
 				@include mq($max-width: 1000px)
