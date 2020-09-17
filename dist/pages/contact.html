@@ -26,24 +26,23 @@
           <ul class="btns">
             <li><a class="btn1 popup-link" href="#callback">Оставить заявку</a></li>
           </ul>
-          <ul class="tels">
-            <li><a href="tel:+74955853865">+7 495 585-38-65</a></li>
-          </ul>
-          <div class="search">
-            <form action=""><input type="search" placeholder="Поиск"><button class="icon-search"></button></form>
+          <div class="right-top-block">
+            <ul class="tels">
+              <li><a href="tel:+74955853865">+7 495 585-38-65</a></li>
+            </ul>
+            <form class="search" action=""><input type="search" placeholder="Поиск"><button class="icon-search"></button></form>
           </div>
           <ul class="links">
-            <li><a class="icon-search" href="search-page.html"></a></li>
             <li><a class="icon-twitter" href="#"></a></li>
-          </ul><a class="lk-link icon-user1" href="lk.html"> <span>Личный кабинет</span></a>
+          </ul><a class="lk-link icon-user1 popup-link" href="#lk"> <span>Личный кабинет</span></a>
         </div>
         <div class="right-bottom">
-          <div class="menu">
+          <ul class="menu">
             <li><a href="about.html">О компании</a></li>
             <li><a href="area-of-competitions.html">Компетенции</a></li>
             <li><a href="information.html">ИНФОРМАЦИЯ</a></li>
             <li><a href="contact.html">Контакты</a></li>
-          </div>
+          </ul>
           <div class="lang">
             <p class="icon-triangle lang__curr">ENG</p>
             <ul class="lang-list">
@@ -95,7 +94,7 @@
               <div class="item__line"></div>
               <p class="item__text">33020, Hollywood, <br> 1722 Sheridan Street, ste 110</p>
               <ul class="tels icon-tel">
-                <li><a href="tel:+17862168282">+ 1 (786) 216-82-82</a></li>
+                <li><a href="tel:+17862168282">+1 (786) 216-82-82</a></li>
               </ul>
               <ul class="mails icon-mail">
                 <li><a href="mailto:info@als-partners.ru">info@als-partners.ru</a></li>
@@ -108,7 +107,7 @@
               <div class="item__line"></div>
               <p class="item__text">80799, Мюнхен, <br> Барэр стрит, 86-90, офис 105</p>
               <ul class="tels icon-tel">
-                <li><a href="tel:+4915751442350">+ 49 (1575) 144-23-50</a></li>
+                <li><a href="tel:+4915751442350">+49 (1575) 144-23-50</a></li>
               </ul>
               <ul class="mails icon-mail">
                 <li><a href="mailto:support@als-partners.ru">support@als-partners.ru</a></li>
@@ -208,6 +207,17 @@
   <div class="popup mfp-hide" id="thanks">
     <h2 class="popup__title">Спасибо</h2>
     <h2 class="popup__subtitle">Ожидайте звонка. Перезвоним в течении 10 минут</h2>
+  </div>
+  <div class="popup mfp-hide" id="lk">
+    <div class="caption">
+      <h2 class="caption__title">ВХОД В ЛИЧНЫЙ КАБИНЕТ</h2>
+    </div>
+    <form class="form" action="#">
+      <div class="form-item full"><input class="form__input" type="email" name="lk-email" placeholder="Email *"></div>
+      <div class="form-item full"><input class="form__input" type="pass" name="lk-pass" placeholder="Пароль *"></div>
+      <div class="form-item full"><label class="checkbox"><input class="checkbox__input" type="checkbox" checked><span class="checkbox__mark">Я соглашаюсь с <a href="#">условиями обработки персональных данных </a></span></label></div>
+      <div class="form-item full"><button class="form__btn btn3">Отправить</button></div>
+    </form>
   </div>
   <script src="../js/libs.js"></script>
   <script src="../js/common.js"></script>

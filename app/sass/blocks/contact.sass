@@ -206,6 +206,9 @@
 					color: $white
 				a
 					color: $white
+		&:first-child
+			.tels
+				margin-top: 40px
 		&-inner
 			padding: 110px 10px
 			display: flex
@@ -256,7 +259,7 @@
 			&:before
 				display: inline-block
 				font-size: 18px
-				top: 0
+				bottom: 0
 				left: 0
 				position: absolute
 				color: $green4
@@ -271,9 +274,10 @@
 				font-size: 21px
 				@include mq($max-width: 575px)
 					font-size: 18px
+		.tels
+			&:before
+				font-size: 26px
 		.mails
 			margin-bottom: 50px
 			margin-top: 0
-			&:before
-				font-size: 15px
 

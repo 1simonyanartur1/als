@@ -32,15 +32,15 @@
 			$(this).find('.lang-list').slideToggle();
 		});
 
-		$(document).on('click', '.header .links .icon-search', function(e) {
+		$(document).on('mouseover', '.header .search .icon-search', function(e) {
 			e.preventDefault();
 			$('.header .search').addClass('active');
+			$('.header .tels').addClass('hide');
 		});
 
 		$('.header .search input').focus(function() {
-			console.log('1');
 		}).blur(function() {
-			console.log('2');
+			$('.header .tels').removeClass('hide');
 			$('.header .search').removeClass('active');
 		})
 
@@ -102,10 +102,12 @@
 
 		$(document).on('click', '.burger', function () {
 			if (!$(this).hasClass('active')) {
-				$('.header .menu').slideDown();
+				$('.header .menu').addClass('active');
+				$('body').addClass('hidden');
 				$(this).addClass('active');
 			} else {
-				$('.header .menu').slideUp();
+				$('.header .menu').removeClass('active');
+				$('body').removeClass('hidden');
 				$(this).removeClass('active');
 			}
 		});
