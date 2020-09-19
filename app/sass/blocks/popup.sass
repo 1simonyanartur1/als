@@ -4,7 +4,7 @@
 .popup
 	padding: 50px 55px
 	background: $green1
-	width: 600px
+	width: 580px
 	margin: 50px auto
 	position: relative
 	&#callback2
@@ -32,6 +32,11 @@
 		width: 100%
 		margin: 50px 0
 		padding: 15px
+	.form-link
+		color: $green3
+		font-size: 18px
+		font-weight: normal
+		text-decoration: underline
 	.mfp-close
 		color: $green4
 		font-size: 35px
@@ -70,14 +75,16 @@
 				width: 47%
 				@include mq($max-width: 575px)
 					width: 100%
+			&.nm
+				margin-bottom: 0
 			&.icon-user2
 				&:before
 					font-size: 22px
 					right: 17px
 			&.icon-tel
 				&:before
-					font-size: 18px
-					right: 10px
+					font-size: 20px
+					right: 17px
 			&.icon-suitcase
 				&:before
 					font-size: 20px
@@ -112,11 +119,28 @@
 		.checkbox
 			&__mark
 				color: $black
+				display: flex
+				flex-wrap: wrap
+				align-items: center
+				line-height: 1
 				a
 					color: $green3
 					text-decoration: underline
 					&:hover
 						text-decoration: none
+		&-row
+			display: flex
+			align-items: center
+			flex-wrap: wrap
+			justify-content: space-between
+			width: 100%
 
+
+	&#lk
+		.caption
+			&__title
+				font-size: 30px
+		.btn3
+			width: 100%
 
 

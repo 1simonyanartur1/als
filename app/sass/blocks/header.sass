@@ -83,8 +83,12 @@
 		align-items: center
 		justify-content: space-between
 		&-block
+			display: flex
+			align-items: center
+			margin-left: 40px
+			@include mq($max-width: 1200px)
+				margin-left: auto
 			@include mq($max-width: 575px)
-				display: flex
 				flex-direction: column
 	.tels
 		margin-left: auto
@@ -106,14 +110,13 @@
 		@include mq($max-width: 575px)
 			display: none
 		li
-			margin: 0 12px
 			position: relative
 			@include mq($max-width: 1200px)
 				margin: 0 5px
 			@include mq($max-width: 575px)
 				margin: 0 4px
 		a
-			font-size: 22px
+			font-size: 21px
 			color: $green3
 			@include mq($max-width: 1200px)
 				font-size: 20px
@@ -171,6 +174,10 @@
 			width: 100%
 			padding: 10px
 			background: $green4
+			height: calc( 100vh - 55px )
+			&.active
+				top: 55px
+		@include mq($max-width: 575px)
 			height: calc( 100vh - 63px )
 			&.active
 				top: 63px
@@ -203,10 +210,11 @@
 		&__curr
 			cursor: pointer
 			letter-spacing: 0.1em
-			color: $white
+			color: $green3
 			font-size: 16px
 			display: flex
 			flex-direction: row-reverse
+			font-weight: 700
 			transition: all .3s ease-out
 			@include mq($max-width: 370px)
 				font-size: 12px
@@ -222,16 +230,16 @@
 			display: none
 			position: absolute
 			left: 0
-			background: $white
-			text-align: right
+			text-align: left
 			top: 100%
 			width: 100%
 			a
-				color: $black
+				color: $white
 				line-height: 2
 				font-weight: 700
-				font-size: 14px
-				padding: 0 5px
+				line-height: 1.2
+				letter-spacing: 0.1em
+				font-size: 16px
 				@include mq($max-width: 370px)
 					font-size: 10px
 				&:hover
@@ -253,7 +261,11 @@
 	.search
 		position: relative
 		margin-right: 10px
+		margin-left: 40px
 		@include mq($max-width: 1200px)
+			margin-right: 25px
+			margin-left: 25px
+		@include mq($max-width: 800px)
 			margin-right: 5px
 			margin-left: 5px
 		&.active
@@ -271,6 +283,7 @@
 			width: 0
 			height: 30px
 			right: 0
+			font-size: 15px
 			z-index: 1
 			padding: 0
 			color: $white
@@ -278,14 +291,22 @@
 			@include mq($max-width: 1200px)
 				border: 1px solid $green3
 				padding: 0 35px 0 5px
-				width: 150px
+				width: 200px
 				position: static
 				height: 24px
+				font-size: 13px
+			@include mq($max-width: 800px)
+				width: 150px
+				font-size: 12px
 			@include mq($max-width: 575px)
 				width: 120px
 			&::placeholder
 				color: $white
-				font-size: 10px
+				font-size: 15px
+				@include mq($max-width: 1200px)
+					font-size: 13px
+				@include mq($max-width: 800px)
+					font-size: 12px
 		button
 			font-size: 22px
 			color: $green3
