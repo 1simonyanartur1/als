@@ -212,11 +212,13 @@
       <h3 class="caption__subtitle">и наши специалисты Вас проконсультируют</h3>
     </div>
     <form class="form" action="#">
-      <div class="form-item full icon-user2"><input class="form__input" type="text" name="callback-name" placeholder="Фамилия Имя Отчество *"></div>
-      <div class="form-item half icon-tel"><input class="form__input" type="tel" name="callback-tel" placeholder="Телефон *"></div>
-      <div class="form-item half icon-mail"><input class="form__input" type="email" name="callback-email" placeholder="Email *"></div>
-      <div class="form-item full"><textarea class="form__textarea" name="callback-text" placeholder="Комментарии"></textarea></div>
-      <div class="form-item full"><label class="checkbox"><input class="checkbox__input" type="checkbox" checked><span class="checkbox__mark">Я соглашаюсь с <a href="#">условиями обработки персональных данных</a></span></label></div>
+      <div class="form-item full icon-user2"><input class="form__input" type="text" name="callback-name" id="callback-name" placeholder=""><label class="form__label" for="callback-name">Фамилия Имя Отчество <span>*</span></label></div>
+      <div class="form-item half icon-tel"><input class="form__input" type="tel" name="callback-tel" id="callback-tel" placeholder=""><label class="form__label" for="callback-tel">Телефон <span>*</span></label></div>
+      <div class="form-item half icon-mail"><input class="form__input" type="email" name="callback-email" id="callback-email" placeholder=""><label class="form__label" for="callback-email">Email <span>*</span></label></div>
+      <div class="form-item full"><textarea class="form__textarea" name="callback-text" id="callback-text" placeholder="Комментарии"></textarea></div>
+      <div class="form-item full"><label class="checkbox"><input class="checkbox__input" type="checkbox" checked>
+          <div class="checkbox__mark">Я соглашаюсь <a href="#">с условиями обработки персональных данных</a></div>
+        </label></div>
       <div class="form-item full"><button class="form__btn btn3">Отправить</button></div>
     </form>
   </div>
@@ -226,15 +228,17 @@
     </div>
     <form class="form" action="#">
       <div class="form-left">
-        <div class="form-item full icon-user2"><input class="form__input" type="text" name="callback2-name" placeholder="Фамилия Имя Отчество *"></div>
-        <div class="form-item full icon-tel"><input class="form__input" type="tel" name="callback2-tel" placeholder="Телефон *"></div>
-        <div class="form-item full icon-mail"><input class="form__input" type="email" name="callback2-email" placeholder="Email *"></div>
+        <div class="form-item full icon-user2"><input class="form__input" type="text" name="callback2-name" id="callback2-name" placeholder=""><label class="form__label" for="callback2-name">Телефон <span>*</span></label></div>
+        <div class="form-item full icon-tel"><input class="form__input" type="tel" name="callback2-tel" id="callback2-tel" placeholder=""><label class="form__label" for="callback2-tel">Телефон <span>*</span></label></div>
+        <div class="form-item full icon-mail"><input class="form__input" type="email" name="callback2-email" id="callback2-email" placeholder=""><label class="form__label" for="callback2-email">Телефон <span>*</span></label></div>
       </div>
       <div class="form-right">
-        <div class="form-item middle icon-suitcase"><input class="form__input" type="text" name="callback2-company" placeholder="Компания"></div>
+        <div class="form-item middle icon-suitcase"><input class="form__input" type="text" name="callback2-company" id="callback2-company" placeholder=""><label class="form__label" for="callback2-company">Компания</label></div>
         <div class="form-item full"><textarea class="form__textarea" name="callback2-text" placeholder="Комментарии"></textarea></div>
       </div>
-      <div class="form-item full"><label class="checkbox"><input class="checkbox__input" type="checkbox" checked><span class="checkbox__mark">Я соглашаюсь с <a href="#">условиями обработки персональных данных</a></span></label></div>
+      <div class="form-item full"><label class="checkbox"><input class="checkbox__input" type="checkbox" checked>
+          <div class="checkbox__mark">Я соглашаюсь <a href="#">с условиями обработки персональных данных</a></div>
+        </label></div>
       <div class="form-item full"><button class="form__btn btn3">Отправить</button></div>
     </form>
   </div>
@@ -247,9 +251,11 @@
       <h2 class="caption__title">ВХОД В ЛИЧНЫЙ КАБИНЕТ</h2>
     </div>
     <form class="form" action="#">
-      <div class="form-item full"><input class="form__input" type="email" name="lk-email" placeholder="Email *"></div>
-      <div class="form-item full"><input class="form__input" type="pass" name="lk-pass" placeholder="Пароль *"></div>
-      <div class="form-item full"><label class="checkbox"><input class="checkbox__input" type="checkbox" checked><span class="checkbox__mark">Запомнить меня</span></label></div>
+      <div class="form-item full"><input class="form__input" type="email" name="lk-email" id="lk-email" placeholder=""><label class="form__label" for="lk-email">Email <span>*</span></label></div>
+      <div class="form-item full"><input class="form__input" type="pass" name="lk-pass" id="lk-pass" placeholder=""><label class="form__label" for="lk-pass">Пароль <span>*</span></label></div>
+      <div class="form-item full"><label class="checkbox"><input class="checkbox__input" type="checkbox" checked>
+          <div class="checkbox__mark">Запомнить меня</div>
+        </label></div>
       <div class="form-row">
         <div class="form-item half nm"><button class="form__btn btn3">Войти</button></div>
         <div class="form-item half nm"><a class="form-link" href="#">Забыли пароль?</a></div>

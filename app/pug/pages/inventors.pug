@@ -75,14 +75,18 @@ html
 						form.form(action="#")
 							.form-left
 								.form-item.icon-user2
-									input.form__input(type="text" name="name" placeholder="Фамилия Имя Отчество *")
+									input.form__input(type="text" name="inventors-name" id="inventors-name" placeholder="")
+									label.form__label(for="inventors-name") Фамилия Имя Отчество <span>*</span>
 								.form-item.icon-tel
-									input.form__input(type="tel" name="tel" placeholder="Телефон *")
+									input.form__input(type="tel" name="inventors-tel" id="inventors-tel" placeholder="")
+									label.form__label(for="inventors-tel") Телефон <span>*</span>
 								.form-item.icon-mail
-									input.form__input(type="email" name="email" placeholder="Email *")
+									input.form__input(type="email" name="inventors-email" id="inventors-email" placeholder="")
+									label.form__label(for="inventors-email") Email <span>*</span>
 							.form-right
 								.form-item.icon-suitcase
-									input.form__input(type="text" name="company" placeholder="Компания")
+									input.form__input(type="text" name="inventors-company" id="inventors-company" placeholder="")
+									label.form__label(for="inventors-company") Компания
 								.form-item
 									textarea.form__textarea(name="" placeholder="Комментарии")
 							.form-item

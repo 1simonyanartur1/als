@@ -45,6 +45,16 @@
 		})
 
 
+		// $(document).on('click', '.form__label', function() {
+		// 	$(this).addClass('hide');
+		// });
+		// $(document).on('focus', '.form__input', function() {
+		// 	$(this).parent('.form-item').find('.form__label').addClass('hide');
+		// });
+		// $(document).on('blur', '.form__input', function() {
+		// 	$(this).parent('.form-item').find('.form__label').removeClass('hide');
+		// });
+
 		$(document).on('click', '.competitions .btns a', function (e) {
 			e.preventDefault();
 			$('.competitions .btns a').removeClass('active');

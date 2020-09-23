@@ -134,6 +134,7 @@
 				&:before
 					font-size: 18px
 					right: 18px
+					right: 18px
 			&.icon-suitcase
 				&:before
 					font-size: 20px
@@ -143,6 +144,16 @@
 				top: 50%
 				right: 15px
 				transform: translate(0, -50%)
+		&__label
+			position: absolute
+			left: 15px
+			top: 50%
+			transform: translate(0, -50%)
+			font: 16px 'Proxima', sans-serif
+			color: $black
+			span
+				color: $green3
+				font-size: 18px
 		&__input,
 		&__textarea
 			background: rgba(255, 255, 255, .65)
@@ -157,6 +168,8 @@
 			&:hover,
 			&:focus
 				border: 1px solid $green3
+				&+.form__label
+					display: none
 			&::placeholder
 				color: $black
 		&__textarea

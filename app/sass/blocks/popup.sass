@@ -94,10 +94,20 @@
 				top: 50%
 				right: 15px
 				transform: translate(0, -50%)
+		&__label
+			position: absolute
+			left: 15px
+			top: 50%
+			transform: translate(0, -50%)
+			font: 16px 'Proxima', sans-serif
+			color: $black
+			span
+				color: $green3
+				font-size: 18px
 		&__input,
 		&__textarea
 			background: rgba(255, 255, 255, .65)
-			border: 1px solid #FFFFFF
+			border: 1px solid transparent
 			font: normal 16px 'Circle', sans-serif
 			color: $black
 			display: block
@@ -108,6 +118,8 @@
 			&:hover,
 			&:focus
 				border: 1px solid $green3
+				&+.form__label
+					display: none
 			&::placeholder
 				color: $black
 		&__textarea
@@ -119,8 +131,6 @@
 		.checkbox
 			&__mark
 				color: $black
-				display: flex
-				flex-wrap: wrap
 				align-items: center
 				line-height: 1
 				a

@@ -4,17 +4,20 @@
 		h3.caption__subtitle и наши специалисты Вас проконсультируют
 	form.form(action="#")
 		.form-item.full.icon-user2
-			input.form__input(type="text" name="callback-name" placeholder="Фамилия Имя Отчество *")
+			input.form__input(type="text" name="callback-name" id="callback-name" placeholder="")
+			label.form__label(for="callback-name") Фамилия Имя Отчество <span>*</span>
 		.form-item.half.icon-tel
-			input.form__input(type="tel" name="callback-tel" placeholder="Телефон *")
+			input.form__input(type="tel" name="callback-tel" id="callback-tel" placeholder="")
+			label.form__label(for="callback-tel") Телефон <span>*</span>
 		.form-item.half.icon-mail
-			input.form__input(type="email" name="callback-email" placeholder="Email *")
+			input.form__input(type="email" name="callback-email" id="callback-email" placeholder="")
+			label.form__label(for="callback-email") Email <span>*</span>
 		.form-item.full
-			textarea.form__textarea(name="callback-text" placeholder="Комментарии")
+			textarea.form__textarea(name="callback-text" id="callback-text" placeholder="Комментарии")
 		.form-item.full
 			label.checkbox
 				input.checkbox__input(type="checkbox" checked)
-				span.checkbox__mark Я соглашаюсь с <a href="#">условиями обработки персональных данных</a>
+				.checkbox__mark Я соглашаюсь <a href="#">с условиями обработки персональных данных</a>
 		.form-item.full
 			button.form__btn.btn3 Отправить
 .popup.mfp-hide#callback2
@@ -24,20 +27,24 @@
 	form.form(action="#")
 		.form-left
 			.form-item.full.icon-user2
-				input.form__input(type="text" name="callback2-name" placeholder="Фамилия Имя Отчество *")
+				input.form__input(type="text" name="callback2-name" id="callback2-name" placeholder="")
+				label.form__label(for="callback2-name") Телефон <span>*</span>
 			.form-item.full.icon-tel
-				input.form__input(type="tel" name="callback2-tel" placeholder="Телефон *")
+				input.form__input(type="tel" name="callback2-tel" id="callback2-tel" placeholder="")
+				label.form__label(for="callback2-tel") Телефон <span>*</span>
 			.form-item.full.icon-mail
-				input.form__input(type="email" name="callback2-email" placeholder="Email *")
+				input.form__input(type="email" name="callback2-email" id="callback2-email" placeholder="")
+				label.form__label(for="callback2-email") Телефон <span>*</span>
 		.form-right
 			.form-item.middle.icon-suitcase
-				input.form__input(type="text" name="callback2-company" placeholder="Компания")
+				input.form__input(type="text" name="callback2-company" id="callback2-company" placeholder="")
+				label.form__label(for="callback2-company") Компания
 			.form-item.full
 				textarea.form__textarea(name="callback2-text" placeholder="Комментарии")
 		.form-item.full
 			label.checkbox
 				input.checkbox__input(type="checkbox" checked)
-				span.checkbox__mark Я соглашаюсь с <a href="#">условиями обработки персональных данных</a>
+				.checkbox__mark Я соглашаюсь <a href="#">с условиями обработки персональных данных</a>
 		.form-item.full
 			button.form__btn.btn3 Отправить
 
@@ -51,13 +58,15 @@
 		h2.caption__title ВХОД В ЛИЧНЫЙ КАБИНЕТ
 	form.form(action="#")
 		.form-item.full
-			input.form__input(type="email" name="lk-email" placeholder="Email *")
+			input.form__input(type="email" name="lk-email" id="lk-email" placeholder="")
+			label.form__label(for="lk-email") Email <span>*</span>
 		.form-item.full
-			input.form__input(type="pass" name="lk-pass" placeholder="Пароль *")
+			input.form__input(type="pass" name="lk-pass" id="lk-pass" placeholder="")
+			label.form__label(for="lk-pass") Пароль <span>*</span>
 		.form-item.full
 			label.checkbox
 				input.checkbox__input(type="checkbox" checked)
-				span.checkbox__mark Запомнить меня
+				.checkbox__mark Запомнить меня
 		.form-row
 			.form-item.half.nm
 				button.form__btn.btn3 Войти

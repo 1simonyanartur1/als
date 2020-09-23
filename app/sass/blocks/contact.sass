@@ -64,6 +64,15 @@
 					width: 100%
 			&.large
 				width: 100%
+		&__label
+			position: absolute
+			left: 15px
+			top: 50%
+			transform: translate(0, -50%)
+			font: 16px 'Proxima', sans-serif
+			color: $white
+			span
+				font-size: 18px
 		&__input,
 		&__textarea
 			background: rgba(255, 255, 255, 0.2)
@@ -78,6 +87,8 @@
 			&:hover,
 			&:focus
 				border: 1px solid transparent
+				&+.form__label
+					display: none
 			&::placeholder
 				color: $white
 		&__textarea
@@ -131,11 +142,10 @@
 			display: block
 	&__mark
 		color: $white
-		display: flex
-		align-items: center
-		flex-wrap: wrap
 		font-weight: normal
 		line-height: 1
+		position: relative
+		padding-left: 25px
 		a
 			color: $white
 			&:hover
@@ -143,18 +153,21 @@
 		&:before
 			content: ''
 			display: inline-block
-			margin-right: 10px
 			width: 16px
 			height: 16px
 			background: $green3
 			transition: all .3s ease-out
+			position: absolute
+			top: 40%
+			left: 0
+			transform: translate(0, -50%)
 		&:after
 			content: '\e812'
 			width: 10px
 			height: 10px
 			position: absolute
 			left: 3px
-			top: 3px
+			top: 2px
 			display: none
 			font-family: fontello
 			font-size: 10px
