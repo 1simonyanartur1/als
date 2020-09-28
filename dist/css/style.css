@@ -562,6 +562,8 @@ body::-webkit-scrollbar-thumb:hover,
       padding: 10px 0; } }
   .header.type2 {
     background: url("../img/header-bg.jpg") no-repeat center center/cover; }
+    .header.type2.scroll {
+      background: url("../img/header-bg.jpg") no-repeat center center/cover; }
   .header.scroll {
     padding: 10px 0;
     background: #066460; }

@@ -38,11 +38,10 @@
 			$('.header .tels').addClass('hide');
 		});
 
-		$('.header .search input').focus(function() {
-		}).blur(function() {
+		$('.header .search input').on('mouseout', function() {
 			$('.header .tels').removeClass('hide');
 			$('.header .search').removeClass('active');
-		})
+		});
 
 
 		// $(document).on('click', '.form__label', function() {
