@@ -40,12 +40,12 @@
 		z-index: 3
 	&.type2
 		background: $green1
-		padding: 145px 0 60px
-		position: relative
-		@include mq($max-width: 1500px)
-			padding: 85px 0 40px
-		@include mq($max-width: 700px)
-			padding: 35px 0
+		.block-container
+			padding: 145px 0 60px
+			@include mq($max-width: 1500px)
+				padding: 85px 0 40px
+			@include mq($max-width: 700px)
+				padding: 35px 0
 		.top
 			background: none
 			padding: 0
@@ -80,11 +80,11 @@
 			color: $black
 			max-width: 825px
 	.top
-		position: relative
-		padding: 80px 0 50px
 		background: url($imgUrl+'advantages/bg1.jpg') no-repeat center center / cover
-		@include mq($max-width: 1200px)
-			padding: 50px 0 0
+		.block-container
+			padding: 80px 0 50px
+			@include mq($max-width: 1200px)
+				padding: 50px 0 0
 		.list
 			display: flex
 			flex-wrap: wrap
@@ -99,6 +99,19 @@
 			@include mq($max-width: 700px)
 				width: 49%
 				margin-bottom: 40px
+			&:nth-child(2)
+				.item__icon
+					height: 65px
+					margin-top: 15px
+					margin-bottom: 50px
+					@include mq($max-width: 700px)
+						height: 70px
+						margin-top: 0
+						margin-bottom: 40px
+					@include mq($max-width: 575px)
+						height: 60px
+					@include mq($max-width: 370px)
+						font-size: 40px
 			&__icon
 				display: block
 				margin-bottom: 40px

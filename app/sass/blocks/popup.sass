@@ -37,6 +37,8 @@
 		font-size: 18px
 		font-weight: normal
 		text-decoration: underline
+		@include mq($max-width: 575px)
+			margin-top: 10px
 	.mfp-close
 		color: $green4
 		font-size: 35px
@@ -99,7 +101,7 @@
 			left: 15px
 			top: 50%
 			transform: translate(0, -50%)
-			font: 16px 'Proxima', sans-serif
+			font: 16px 'Circle', sans-serif
 			color: $black
 			span
 				color: $green3
@@ -121,6 +123,7 @@
 				&+.form__label
 					display: none
 			&::placeholder
+				font-family: 'Circle', sans-serif
 				color: $black
 		&__textarea
 			min-height: 210px

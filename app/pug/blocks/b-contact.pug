@@ -1,31 +1,32 @@
 section.b-contact#b-contact
-	img.line(src=imgUrl+"lines/line6.png", alt="")
-	.container
-		.caption
-			h2.caption__title оставьте заявку
-			h3.caption__subtitle и наши специалисты Вас проконсультируют
-		form.form(action="#")
-			.form-item.middle.icon-user2
-				input.form__input(type="text" name="b-contact-name" id="b-contact-name" placeholder="")
-				label.form__label(for="b-contact-name") Фамилия Имя Отчество <span>*</span>
-			.form-item.small.icon-tel
-				input.form__input(type="tel" name="b-contact-tel" id="b-contact-tel" placeholder="")
-				label.form__label(for="b-contact-tel") Телефон <span>*</span>
-			.form-item.middle.icon-suitcase
-				input.form__input(type="text" name="b-contact-company" id="b-contact-company" placeholder="")
-				label.form__label(for="b-contact-company") Компания
-			.form-item.small.icon-mail
-				input.form__input(type="email" name="b-contact-email" id="b-contact-email" placeholder="")
-				label.form__label(for="b-contact-email") Email <span>*</span>
-			.form-item.middle
-				select.form__select(name="b-contact-theme" id="b-contact-theme")
-					option(value="" data-display="Тема обращения") Тема обращения
-					option(value="1") Тема 1
-			.form-item.large
-				textarea.form__textarea(name="b-contact-text" id="b-contact-text" placeholder="Комментарии")
-			.form-item.large
-				label.checkbox
-					input.checkbox__input(type="checkbox" checked)
-					.checkbox__mark <span>Я соглашаюсь</span> <a href="#">с условиями обработки персональных данных</a>
-			.form-item.large
-				button.form__btn.btn2 Отправить
+	.block-container
+		img.line(src=imgUrl+"lines/line6.png", alt="")
+		.container
+			.caption
+				h2.caption__title оставьте заявку
+				h3.caption__subtitle и наши специалисты Вас проконсультируют
+			form.form(action="#")
+				.form-item.middle.icon-user2
+					input.form__input(type="text" name="b-contact-name" id="b-contact-name" placeholder="")
+					label.form__label(for="b-contact-name") Фамилия Имя Отчество <span>*</span>
+				.form-item.small.icon-tel
+					input.form__input(type="tel" name="b-contact-tel" id="b-contact-tel" placeholder="")
+					label.form__label(for="b-contact-tel") Телефон <span>*</span>
+				.form-item.middle.icon-suitcase
+					input.form__input(type="text" name="b-contact-company" id="b-contact-company" placeholder="")
+					label.form__label(for="b-contact-company") Компания
+				.form-item.small.icon-mail
+					input.form__input(type="email" name="b-contact-email" id="b-contact-email" placeholder="")
+					label.form__label(for="b-contact-email") Email <span>*</span>
+				.form-item.middle
+					select.form__select(name="b-contact-theme" id="b-contact-theme")
+						option(value="" data-display="Тема обращения") Тема обращения
+						option(value="1") Тема 1
+				.form-item.large
+					textarea.form__textarea(name="b-contact-text" id="b-contact-text" placeholder="Комментарии")
+				.form-item.large
+					label.checkbox
+						input.checkbox__input(type="checkbox" checked)
+						.checkbox__mark <span>Я соглашаюсь</span> <a href="#">с условиями обработки персональных данных</a>
+				.form-item.large
+					button.form__btn.btn2 Отправить

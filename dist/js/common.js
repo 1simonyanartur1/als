@@ -32,17 +32,35 @@
 			$(this).find('.lang-list').slideToggle();
 		});
 
-		$(document).on('mouseover', '.header .search .icon-search', function(e) {
-			e.preventDefault();
+		function showSearch() {
 			$('.header .search').addClass('active');
 			$('.header .tels').addClass('hide');
-		});
-
-		$('.header .search input').on('mouseout', function() {
+		}
+		function hideSearch() {
 			$('.header .tels').removeClass('hide');
 			$('.header .search').removeClass('active');
+		}
+
+		$(document).on('mouseover', '.header .search', function() {
+			showSearch();
+		});
+		$(document).on('mouseout', '.header .search', function() {
+			if($(this).find('input').is(':focus')) {
+				// если уводим мылшку и он в фокусе
+			} else {
+				// если уводим мылшку и он не в фокусе
+				hideSearch();
+			}
 		});
 
+		$('.header .search input').focus(function() {
+			showSearch();
+		});
+		$('.header .search input').blur(function() {
+			hideSearch();
+		});
+		
+		
 
 		// $(document).on('click', '.form__label', function() {
 		// 	$(this).addClass('hide');

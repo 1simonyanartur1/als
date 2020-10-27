@@ -91,45 +91,47 @@ html
 
 
 			section.info
-				img.line(src=imgUrl+"lines/line7.png", alt="")
-				.container
-					.inner
-						.caption
-							h2.caption__title Что угрожает владельцу незарегистрированного товарного знака?
-							.caption__line
-							p.caption__text.change-scroll Любое юридическое лицо или индивидуальный предприниматель втайне от владельца неохраняемого средства индивидуализации может подать заявку и зарегистрировать знак, а затем запретить его применять первоначальному пользователю. При этом правообладатель получит возможность взыскать компенсацию с последнего за незаконное использование обозначения.
+				.block-container
+					img.line(src=imgUrl+"lines/line7.png", alt="")
+					.container
+						.inner
+							.caption
+								h2.caption__title Что угрожает владельцу незарегистрированного товарного знака?
+								.caption__line
+								p.caption__text.change-scroll Любое юридическое лицо или индивидуальный предприниматель втайне от владельца неохраняемого средства индивидуализации может подать заявку и зарегистрировать знак, а затем запретить его применять первоначальному пользователю. При этом правообладатель получит возможность взыскать компенсацию с последнего за незаконное использование обозначения.
 
 			section.request#b-contact
-				img.line1(src=imgUrl+"lines/line8.png", alt="")
-				img.line2(src=imgUrl+"lines/line9.png", alt="")
-				.container
-					.caption
-						h2.caption__title Защитите Ваш <br> бизнес <span>уже сегодня</span>
-						.caption__line
-					.inner
+				.block-container
+					img.line1(src=imgUrl+"lines/line8.png", alt="")
+					img.line2(src=imgUrl+"lines/line9.png", alt="")
+					.container
 						.caption
-							h2.caption__title оставьте заявку <br> <span>и наши специалисты Вас проконсультируют</span>
-						form.form(action="#")
-							.form-left
-								.form-item.icon-user2
-									input.form__input(type="text" name="request-name" id="request-name" placeholder="")
-									label.form__label(for="request-name") Фамилия Имя Отчество <span>*</span>
-								.form-item.icon-tel
-									input.form__input(type="tel" name="request-tel" id="request-tel" placeholder="")
-									label.form__label(for="request-tel") Телефон <span>*</span>
-								.form-item.icon-mail
-									input.form__input(type="email" name="request-email" id="request-email" placeholder="")
-									label.form__label(for="request-email") Email <span>*</span>
-							.form-right
+							h2.caption__title Защитите Ваш <br> бизнес <span>уже сегодня</span>
+							.caption__line
+						.inner
+							.caption
+								h2.caption__title оставьте заявку <br> <span>и наши специалисты Вас проконсультируют</span>
+							form.form(action="#")
+								.form-left
+									.form-item.icon-user2
+										input.form__input(type="text" name="request-name" id="request-name" placeholder="")
+										label.form__label(for="request-name") Фамилия Имя Отчество <span>*</span>
+									.form-item.icon-tel
+										input.form__input(type="tel" name="request-tel" id="request-tel" placeholder="")
+										label.form__label(for="request-tel") Телефон <span>*</span>
+									.form-item.icon-mail
+										input.form__input(type="email" name="request-email" id="request-email" placeholder="")
+										label.form__label(for="request-email") Email <span>*</span>
+								.form-right
+									.form-item
+										textarea.form__textarea(name="request-text" placeholder="Комментарии")
 								.form-item
-									textarea.form__textarea(name="request-text" placeholder="Комментарии")
-							.form-item
-								label.checkbox
-									input.checkbox__input(type="checkbox" checked)
-									span.checkbox__mark Я соглашаюсь с 
-										a(href="#") условиями обработки персональных данных 
-							.form-item
-								button.form__btn.btn3 Отправить
+									label.checkbox
+										input.checkbox__input(type="checkbox" checked)
+										span.checkbox__mark Я соглашаюсь с 
+											a(href="#") условиями обработки персональных данных 
+								.form-item
+									button.form__btn.btn3 Отправить
 				
 
 		include ../blocks/footer.pug

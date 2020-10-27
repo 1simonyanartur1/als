@@ -1,11 +1,11 @@
 .callback
-	padding: 200px 0 230px
 	background: url($imgUrl+'callback/bg.jpg') no-repeat center bottom / cover
-	position: relative
-	@include mq($max-width: 1700px)
-		padding: 100px 0
-	@include mq($max-width: 1000px)
-		padding: 50px 0
+	.block-container
+		padding: 200px 0 230px
+		@include mq($max-width: 1700px)
+			padding: 100px 0
+		@include mq($max-width: 1000px)
+			padding: 50px 0
 	.line1
 		position: absolute
 		left: 0
@@ -90,7 +90,7 @@
 			left: 15px
 			top: 50%
 			transform: translate(0, -50%)
-			font: 16px 'Proxima', sans-serif
+			font: 16px 'Circle', sans-serif
 			color: $black
 			span
 				color: $green3
@@ -99,7 +99,7 @@
 		&__textarea
 			background: rgba(255, 255, 255, .65)
 			border: 1px solid #FFFFFF
-			font: 16px 'Proxima', sans-serif
+			font: 16px 'Circle', sans-serif
 			color: $black
 			display: block
 			width: 100%
@@ -113,6 +113,7 @@
 					display: none
 			&::placeholder
 				color: $black
+				font-family: 'Circle', sans-serif
 		&__textarea
 			min-height: 130px
 			padding: 15px

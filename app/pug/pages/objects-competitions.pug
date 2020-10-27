@@ -65,29 +65,30 @@ html
 							.item__link Читать подробнее
 
 			section.request#b-contact
-				img.line2(src=imgUrl+"lines/line10.png", alt="")
-				.container
-					.inner
-						.caption
-							h2.caption__title оставьте заявку <br> <span>и наши специалисты Вас проконсультируют</span>
-						form.form(action="#")
-							.form-left
-								.form-item.icon-user2
-									input.form__input(type="text" name="name" placeholder="Фамилия Имя Отчество *")
-								.form-item.icon-tel
-									input.form__input(type="tel" name="tel" placeholder="Телефон *")
-								.form-item.icon-mail
-									input.form__input(type="email" name="email" placeholder="Email *")
-							.form-right
+				.block-container
+					img.line2(src=imgUrl+"lines/line10.png", alt="")
+					.container
+						.inner
+							.caption
+								h2.caption__title оставьте заявку <br> <span>и наши специалисты Вас проконсультируют</span>
+							form.form(action="#")
+								.form-left
+									.form-item.icon-user2
+										input.form__input(type="text" name="name" placeholder="Фамилия Имя Отчество *")
+									.form-item.icon-tel
+										input.form__input(type="tel" name="tel" placeholder="Телефон *")
+									.form-item.icon-mail
+										input.form__input(type="email" name="email" placeholder="Email *")
+								.form-right
+									.form-item
+										textarea.form__textarea(name="" placeholder="Комментарии")
 								.form-item
-									textarea.form__textarea(name="" placeholder="Комментарии")
-							.form-item
-								label.checkbox
-									input.checkbox__input(type="checkbox" checked)
-									span.checkbox__mark Я соглашаюсь с 
-										a(href="#") условиями обработки персональных данных 
-							.form-item
-								button.form__btn.btn3 Отправить
+									label.checkbox
+										input.checkbox__input(type="checkbox" checked)
+										span.checkbox__mark Я соглашаюсь с 
+											a(href="#") условиями обработки персональных данных 
+								.form-item
+									button.form__btn.btn3 Отправить
 
 		include ../blocks/footer.pug
 

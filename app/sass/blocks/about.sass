@@ -1,13 +1,13 @@
 .about
-	padding: 160px 0 170px
 	background: url($imgUrl+'about/bg.jpg') no-repeat center center / cover
-	position: relative
-	@include mq($max-width: 1500px)
-		padding: 100px 0 170px
-	@include mq($max-width: 1200px)
-		padding: 75px 0
-	@include mq($max-width: 700px)
-		padding: 40px 0
+	.block-container
+		padding: 160px 0 170px
+		@include mq($max-width: 1500px)
+			padding: 100px 0 170px
+		@include mq($max-width: 1200px)
+			padding: 75px 0
+		@include mq($max-width: 700px)
+			padding: 40px 0
 	.line1
 		position: absolute
 		left: 0

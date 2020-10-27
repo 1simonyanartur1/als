@@ -84,32 +84,33 @@ html
 
 
 			section.request#b-contact
-				img.line2(src=imgUrl+"lines/line9.png", alt="")
-				.container
-					.inner
-						.caption
-							h2.caption__title оставьте заявку <br> <span>и наши специалисты Вас проконсультируют</span>
-						form.form(action="#")
-							.form-left
-								.form-item.icon-user2
-									input.form__input(type="text" name="request-name" id="request-name" placeholder="")
-									label.form__label(for="request-name") Фамилия Имя Отчество <span>*</span>
-								.form-item.icon-tel
-									input.form__input(type="tel" name="request-tel" id="request-tel" placeholder="")
-									label.form__label(for="request-tel") Телефон <span>*</span>
-								.form-item.icon-mail
-									input.form__input(type="email" name="request-email" id="request-email" placeholder="")
-									label.form__label(for="request-email") Email <span>*</span>
-							.form-right
+				.block-container
+					img.line2(src=imgUrl+"lines/line9.png", alt="")
+					.container
+						.inner
+							.caption
+								h2.caption__title оставьте заявку <br> <span>и наши специалисты Вас проконсультируют</span>
+							form.form(action="#")
+								.form-left
+									.form-item.icon-user2
+										input.form__input(type="text" name="request-name" id="request-name" placeholder="")
+										label.form__label(for="request-name") Фамилия Имя Отчество <span>*</span>
+									.form-item.icon-tel
+										input.form__input(type="tel" name="request-tel" id="request-tel" placeholder="")
+										label.form__label(for="request-tel") Телефон <span>*</span>
+									.form-item.icon-mail
+										input.form__input(type="email" name="request-email" id="request-email" placeholder="")
+										label.form__label(for="request-email") Email <span>*</span>
+								.form-right
+									.form-item
+										textarea.form__textarea(name="request-text" placeholder="Комментарии")
 								.form-item
-									textarea.form__textarea(name="request-text" placeholder="Комментарии")
-							.form-item
-								label.checkbox
-									input.checkbox__input(type="checkbox" checked)
-									span.checkbox__mark Я соглашаюсь с 
-										a(href="#") условиями обработки персональных данных 
-							.form-item
-								button.form__btn.btn3 Отправить
+									label.checkbox
+										input.checkbox__input(type="checkbox" checked)
+										span.checkbox__mark Я соглашаюсь с 
+											a(href="#") условиями обработки персональных данных 
+								.form-item
+									button.form__btn.btn3 Отправить
 
 		include ../blocks/footer.pug
 
