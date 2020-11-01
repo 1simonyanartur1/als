@@ -41,6 +41,15 @@
 			$('.header .search').removeClass('active');
 		}
 
+		$('.form__input').blur(function() {
+			if($(this).val() != 0) {
+				console.log('1');
+				$(this).next('.form__label').css('display','none');
+			} else {
+				console.log('2');
+			}
+		});
+
 		$(document).on('mouseover', '.header .search', function() {
 			showSearch();
 		});

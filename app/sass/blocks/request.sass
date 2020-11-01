@@ -149,16 +149,17 @@
 			left: 15px
 			top: 50%
 			transform: translate(0, -50%)
-			font: 16px 'Circle', sans-serif
+			font: 16px 'Circe', sans-serif
 			color: $black
 			span
+				font-family: 'Proxima', sans-serif
 				color: $green3
 				font-size: 18px
 		&__input,
 		&__textarea
 			background: rgba(255, 255, 255, .65)
 			border: 1px solid #FFFFFF
-			font: 16px 'Circle', sans-serif
+			font: 16px 'Circe', sans-serif
 			color: $black
 			display: block
 			width: 100%
@@ -171,7 +172,7 @@
 				&+.form__label
 					display: none
 			&::placeholder
-				font-family: 'Circle', sans-serif
+				font-family: 'Circe', sans-serif
 				color: $black
 		&__textarea
 			min-height: 210px
@@ -186,9 +187,6 @@
 		.checkbox
 			&__mark
 				color: $black
-				display: flex
-				align-items: center
-				flex-wrap: wrap
 				a
 					color: $green3
 					text-decoration: underline

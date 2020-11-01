@@ -69,7 +69,7 @@
 			left: 15px
 			top: 50%
 			transform: translate(0, -50%)
-			font: 16px 'Circle', sans-serif
+			font: 16px 'Proxima', sans-serif
 			color: $white
 			span
 				font-size: 18px
@@ -77,7 +77,7 @@
 		&__textarea
 			background: rgba(255, 255, 255, 0.2)
 			border: 1px solid #FFFFFF
-			font: 16px 'Circle', sans-serif
+			font: 16px 'Proxima', sans-serif
 			color: $white
 			display: block
 			width: 100%
@@ -91,7 +91,7 @@
 					display: none
 			&::placeholder
 				color: $white
-				font-family: 'Circle', sans-serif
+				font-family: 'Proxima', sans-serif
 		&__textarea
 			min-height: 150px
 			padding: 15px
@@ -108,7 +108,7 @@
 	font: 16px/50px 'Proxima', sans-serif
 	color: $white
 	.current
-		font-family: 'Circle', sans-serif
+		font-family: 'Circe', sans-serif
 	&:after
 		border-color: $white
 		font-size: 20px
@@ -128,7 +128,6 @@
 	align-items: center
 	user-select: none
 	cursor: pointer
-	margin-bottom: 6px
 	&:hover
 		.checkbox__mark:before
 			background: $green2
@@ -169,8 +168,9 @@
 			width: 10px
 			height: 10px
 			position: absolute
-			left: 3px
-			top: 2px
+			top: 50%
+			left: 2px
+			transform: translate(0, -65%)
 			display: none
 			font-family: fontello
 			font-size: 10px
