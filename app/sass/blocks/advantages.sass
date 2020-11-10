@@ -9,12 +9,13 @@
 			display: none
 	.line2
 		display: block
-		width: 18%
+		width: 25%
 		position: absolute
 		left: 0
 		bottom: 0
+		transform: translate(-34%, 43%)
 		@include mq($max-width: 1700px)
-			width: 12%
+			width: 18%
 		@include mq($max-width: 1200px)
 			display: none
 	.line4
@@ -85,6 +86,9 @@
 		background: url($imgUrl+'advantages/bg1.jpg') no-repeat center center / cover
 		.block-container
 			padding: 80px 0 50px
+			overflow-y: hidden
+			@include mq($min-width: 1921px)
+				overflow-y: visible
 			@include mq($max-width: 1200px)
 				padding: 50px 0 0
 		.list

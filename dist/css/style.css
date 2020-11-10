@@ -1688,10 +1688,12 @@ body::-webkit-scrollbar-thumb:hover,
         padding: 0; } }
   .we .line {
     display: block;
-    width: 20%;
+    width: 37%;
     position: absolute;
     right: 0;
-    bottom: 0; }
+    bottom: 0;
+    -webkit-transform: translate(46%, 0);
+    transform: translate(46%, 0); }
     @media only screen and (max-width: 1200px) {
       .we .line {
         display: none; } }
@@ -1790,13 +1792,15 @@ body::-webkit-scrollbar-thumb:hover,
 
 .advantages .line2 {
   display: block;
-  width: 18%;
+  width: 25%;
   position: absolute;
   left: 0;
-  bottom: 0; }
+  bottom: 0;
+  -webkit-transform: translate(-34%, 43%);
+  transform: translate(-34%, 43%); }
   @media only screen and (max-width: 1700px) {
     .advantages .line2 {
-      width: 12%; } }
+      width: 18%; } }
   @media only screen and (max-width: 1200px) {
     .advantages .line2 {
       display: none; } }
@@ -1891,7 +1895,11 @@ body::-webkit-scrollbar-thumb:hover,
 .advantages .top {
   background: url("../img/advantages/bg1.jpg") no-repeat center center/cover; }
   .advantages .top .block-container {
-    padding: 80px 0 50px; }
+    padding: 80px 0 50px;
+    overflow-y: hidden; }
+    @media only screen and (min-width: 1921px) {
+      .advantages .top .block-container {
+        overflow-y: visible; } }
     @media only screen and (max-width: 1200px) {
       .advantages .top .block-container {
         padding: 50px 0 0; } }
@@ -3061,10 +3069,12 @@ body::-webkit-scrollbar-thumb:hover,
   .about .line1 {
     position: absolute;
     left: 0;
-    top: 0; }
+    top: 0;
+    -webkit-transform: translate(-21.9%, 0);
+    transform: translate(-21.9%, 0); }
     @media only screen and (max-width: 1700px) {
       .about .line1 {
-        width: 28%; } }
+        width: 35.9%; } }
     @media only screen and (max-width: 1200px) {
       .about .line1 {
         display: none; } }
@@ -3072,10 +3082,12 @@ body::-webkit-scrollbar-thumb:hover,
     position: absolute;
     right: 0;
     bottom: 0;
-    display: block; }
+    display: block;
+    -webkit-transform: translate(20%, 0);
+    transform: translate(20%, 0); }
     @media only screen and (max-width: 1700px) {
       .about .line2 {
-        width: 26%; } }
+        width: 32%; } }
     @media only screen and (max-width: 1200px) {
       .about .line2 {
         display: none; } }
@@ -3456,7 +3468,8 @@ body::-webkit-scrollbar-thumb:hover,
 .callback {
   background: url("../img/callback/bg.jpg") no-repeat center bottom/cover; }
   .callback .block-container {
-    padding: 200px 0 230px; }
+    padding: 200px 0 230px;
+    overflow-x: hidden; }
     @media only screen and (max-width: 1700px) {
       .callback .block-container {
         padding: 100px 0; } }
@@ -3467,10 +3480,12 @@ body::-webkit-scrollbar-thumb:hover,
     position: absolute;
     left: 0;
     top: 0;
-    display: block; }
+    display: block;
+    -webkit-transform: translate(-15.4%, 0);
+    transform: translate(-15.4%, 0); }
     @media only screen and (max-width: 1700px) {
       .callback .line1 {
-        width: 25%; } }
+        width: 29.8%; } }
     @media only screen and (max-width: 1200px) {
       .callback .line1 {
         display: none; } }

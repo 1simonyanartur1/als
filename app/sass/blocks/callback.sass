@@ -2,6 +2,8 @@
 	background: url($imgUrl+'callback/bg.jpg') no-repeat center bottom / cover
 	.block-container
 		padding: 200px 0 230px
+		overflow-x: hidden
+		@include mq($min-width: 1921px)
 		@include mq($max-width: 1700px)
 			padding: 100px 0
 		@include mq($max-width: 1000px)
@@ -11,8 +13,9 @@
 		left: 0
 		top: 0
 		display: block
+		transform: translate(-15.4%, 0)
 		@include mq($max-width: 1700px)
-			width: 25%
+			width: 29.8%
 		@include mq($max-width: 1200px)
 			display: none
 	.line2
