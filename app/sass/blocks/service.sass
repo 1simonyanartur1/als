@@ -161,6 +161,10 @@
 			&:hover
 				color: $black
 			&.active
+				color: $black
+				&+.spoiler-list
+					height: auto
+					display: block !important
 				&:after
 					transform: rotate(0deg)
 			&:after
@@ -184,6 +188,8 @@
 				line-height: 1.2
 				@include mq($max-width: 1200px)
 					font-size: 14px
+				&.active
+					text-decoration: underline
 				&:hover
 					color: $green3
 
