@@ -6,13 +6,14 @@ section.b-contact#b-contact
 				h2.caption__title оставьте заявку
 				h3.caption__subtitle и наши специалисты Вас проконсультируют
 			form.form(action="#")
-				.form-item.middle.icon-user2
-					input.form__input(type="text" name="b-contact-name" id="b-contact-name" placeholder="")
+				.form-item.middle.icon-user
+					input.form__input.error(type="text" name="b-contact-name" id="b-contact-name" placeholder="")
+					span.error-msg Пожалуйста заполните это поле
 					label.form__label(for="b-contact-name") Фамилия Имя Отчество <span>*</span>
-				.form-item.small.icon-tel
+				.form-item.small.icon-te
 					input.form__input(type="tel" name="b-contact-tel" id="b-contact-tel" placeholder="")
 					label.form__label(for="b-contact-tel") Телефон <span>*</span>
-				.form-item.middle.icon-suitcase
+				.form-item.middle.icon-suitcas
 					input.form__input(type="text" name="b-contact-company" id="b-contact-company" placeholder="")
 					label.form__label(for="b-contact-company") Компания
 				.form-item.small.icon-mail

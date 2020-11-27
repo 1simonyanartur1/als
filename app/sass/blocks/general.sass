@@ -289,8 +289,18 @@
 			top: 12px
 			transform: rotate(-45deg)
 
-
-
+.error
+	border-color: #17A9A3 !important
+	&~.error-msg
+		display: block
+.error-msg
+	display: none
+	position: absolute
+	top: 100%
+	left: 0
+	color: #17A9A3
+	line-height: 2
+	font-size: 15px
 .checkbox
 	@include mq($max-width: 575px)
 		font-size: 11px !important

@@ -99,6 +99,13 @@
 			z-index: 1
 			clip-path: polygon(100% 0, 100% 60%, 69% 100%, 0 100%, 0 0)
 			opacity: 0
+			@include mq($max-width: 1200px)
+				opacity: 1
+				right: 0
+				top: 0
+				left: 0
+				bottom: 0
+				display: none
 		&__title
 			color: $white
 			padding: 20px
@@ -140,6 +147,7 @@
 				opacity: 1
 				position: relative
 				margin-top: 20px
+				width: calc(100% - 40px)
 			&:before
 				content: ''
 				position: absolute
@@ -150,6 +158,8 @@
 				left: 0
 				bottom: -1px
 				transition: all .3s ease-out
+				@include mq($max-width: 1200px)
+					bottom: -3px
 			&:after
 				content: '\e80d'
 				display: block
@@ -161,6 +171,8 @@
 				right: -30px
 				color: $white
 				transition: all .3s ease-out
+				@include mq($max-width: 1200px)
+					right: 0
 			&:hover
 				color: $green3
 				&::before

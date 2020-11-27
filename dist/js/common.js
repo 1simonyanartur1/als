@@ -1,8 +1,10 @@
 (function ($) {
+	$('.information').attr('id', 'information');
+	$('.service').attr('id', 'service');
 	$('.load').show();
 	$(document).ready(function () {
 
-		$('.load-wrap').hide();
+		$('.load-wrap').fadeOut('slow');
 
 		var $scrollPos = 0;
 		$(window).scroll(function () {
@@ -188,11 +190,19 @@
 			}
 		});
 
-		$('.information').attr('id', 'information');
-		$('.information-menu a').each(function (e) {
-			var $href = '#information';
-			$(this).attr('href', $('.popup-video').attr('href') + $href);
-		});
+		
+		// $('.information-menu li').each(function (e) {
+		// 	var $href = '#information';
+		// 	$(this).find('a').attr('href', $(this).find('a').attr('href') + $href);
+		// });
+		// $('.spoiler-list li').each(function (e) {
+		// 	var $href = '#service';
+		// 	$(this).find('a').attr('href', $(this).find('a').attr('href') + $href);
+		// });
+		// $('.spoiler__title').each(function (e) {
+		// 	var $href = '#service';
+		// 	$(this).find('a').attr('href', $(this).find('a').attr('href') + $href);
+		// });
 
 		// $(document).on('click', '.information-menu a', function (e) {
 		// 	e.preventDefault();
