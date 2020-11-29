@@ -2,17 +2,21 @@ section.b-contact#b-contact
 	.block-container
 		img.line(src=imgUrl+"lines/line6.png", alt="")
 		.container
+			.form-thanks
+				.form-thanks__title СПАСИБО <br> ЗА ВАШУ ЗАЯВКУ!
+				.form-thanks__subtitle Мы вскоре свяжемся с вами
 			.caption
 				h2.caption__title оставьте заявку
 				h3.caption__subtitle и наши специалисты Вас проконсультируют
 			form.form(action="#")
 				.form-item.middle.icon-user
-					input.form__input.error(type="text" name="b-contact-name" id="b-contact-name" placeholder="")
-					span.error-msg Пожалуйста заполните это поле
+					input.form__input(type="text" name="b-contact-name" id="b-contact-name" placeholder="")
 					label.form__label(for="b-contact-name") Фамилия Имя Отчество <span>*</span>
+					span.error-msg Пожалуйста заполните это поле
 				.form-item.small.icon-te
-					input.form__input(type="tel" name="b-contact-tel" id="b-contact-tel" placeholder="")
+					input.form__input.error(type="tel" name="b-contact-tel" id="b-contact-tel" placeholder="")
 					label.form__label(for="b-contact-tel") Телефон <span>*</span>
+					span.error-msg Пожалуйста заполните это поле
 				.form-item.middle.icon-suitcas
 					input.form__input(type="text" name="b-contact-company" id="b-contact-company" placeholder="")
 					label.form__label(for="b-contact-company") Компания

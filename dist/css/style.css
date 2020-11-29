@@ -525,6 +525,10 @@ body::-webkit-scrollbar-thumb:hover,
   color: #17A9A3;
   line-height: 2;
   font-size: 15px; }
+  @media only screen and (max-width: 575px) {
+    .error-msg {
+      font-size: 10px;
+      line-height: 1.6; } }
 
 @media only screen and (max-width: 575px) {
   .checkbox {
@@ -601,6 +605,91 @@ body::-webkit-scrollbar-thumb:hover,
   75% {
     -webkit-transform: translate(0, 160%);
     transform: translate(0, 160%); } }
+
+.form-thanks {
+  max-width: 100%;
+  width: 100%;
+  padding: 75px;
+  color: #066460;
+  position: relative;
+  z-index: 2;
+  margin: 50px 0; }
+  @media only screen and (max-width: 1700px) {
+    .form-thanks {
+      padding: 60px; } }
+  @media only screen and (max-width: 1200px) {
+    .form-thanks {
+      max-width: 95%;
+      margin: 50px auto; } }
+  @media only screen and (max-width: 700px) {
+    .form-thanks {
+      padding: 15px; } }
+  .form-thanks:before {
+    content: '';
+    display: block;
+    background: #17A9A3;
+    left: -20px;
+    right: 20px;
+    top: -20px;
+    bottom: 20px;
+    position: absolute;
+    z-index: -2; }
+    @media only screen and (max-width: 1200px) {
+      .form-thanks:before {
+        left: -10px;
+        top: -10px;
+        right: 10px;
+        bottom: 10px; } }
+  .form-thanks:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: #DCF2F1;
+    z-index: -1; }
+  .form-thanks__title {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+    @media only screen and (max-width: 1700px) {
+      .form-thanks__title {
+        font-size: 40px; } }
+    @media only screen and (max-width: 700px) {
+      .form-thanks__title {
+        font-size: 30px;
+        margin-bottom: 10px; } }
+    @media only screen and (max-width: 370px) {
+      .form-thanks__title {
+        font-size: 22px; } }
+    .form-thanks__title:after {
+      content: '';
+      display: inline-block;
+      width: 89px;
+      height: 44px;
+      background: url("../img/icons/send-mail.svg") no-repeat center center/contain;
+      margin-left: 40px; }
+      @media only screen and (max-width: 1700px) {
+        .form-thanks__title:after {
+          margin-left: 20px;
+          width: 69px;
+          height: 32px; } }
+      @media only screen and (max-width: 700px) {
+        .form-thanks__title:after {
+          display: none; } }
+  .form-thanks__subtitle {
+    font-size: 30px;
+    font-weight: 400; }
+    @media only screen and (max-width: 1700px) {
+      .form-thanks__subtitle {
+        font-size: 24px; } }
+    @media only screen and (max-width: 700px) {
+      .form-thanks__subtitle {
+        font-size: 16px; } }
 
 .text-container h1 {
   font-size: 46px;
@@ -4678,3 +4767,74 @@ body::-webkit-scrollbar-thumb:hover,
     font-size: 30px; }
   .popup#lk .btn3 {
     width: 100%; }
+  .popup#thanks {
+    max-width: 900px;
+    width: 100%;
+    background: #DCF2F1;
+    padding: 85px 95px;
+    color: #066460; }
+    @media only screen and (max-width: 1700px) {
+      .popup#thanks {
+        padding: 60px;
+        max-width: 600px; } }
+    @media only screen and (max-width: 700px) {
+      .popup#thanks {
+        padding: 15px;
+        margin: 20px;
+        max-width: calc(100% - 40px); } }
+    .popup#thanks:before {
+      content: '';
+      display: block;
+      background: #17A9A3;
+      left: -20px;
+      right: 20px;
+      top: -20px;
+      bottom: 20px;
+      position: absolute;
+      z-index: -1; }
+      @media only screen and (max-width: 1200px) {
+        .popup#thanks:before {
+          left: -10px;
+          top: -10px;
+          right: 10px;
+          bottom: 10px; } }
+    .popup#thanks .popup__title {
+      font-weight: 300;
+      font-size: 60px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+      @media only screen and (max-width: 1700px) {
+        .popup#thanks .popup__title {
+          font-size: 40px; } }
+      @media only screen and (max-width: 700px) {
+        .popup#thanks .popup__title {
+          font-size: 30px;
+          margin-bottom: 10px; } }
+      @media only screen and (max-width: 370px) {
+        .popup#thanks .popup__title {
+          font-size: 22px; } }
+      .popup#thanks .popup__title:after {
+        content: '';
+        display: inline-block;
+        width: 89px;
+        height: 44px;
+        background: url("../img/icons/send-mail.svg") no-repeat center center/contain;
+        margin-left: 40px; }
+        @media only screen and (max-width: 1700px) {
+          .popup#thanks .popup__title:after {
+            margin-left: 20px;
+            width: 69px;
+            height: 32px; } }
+        @media only screen and (max-width: 700px) {
+          .popup#thanks .popup__title:after {
+            display: none; } }
+    .popup#thanks .popup__subtitle {
+      font-size: 30px;
+      font-weight: 400; }
+      @media only screen and (max-width: 1700px) {
+        .popup#thanks .popup__subtitle {
+          font-size: 24px; } }
+      @media only screen and (max-width: 700px) {
+        .popup#thanks .popup__subtitle {
+          font-size: 16px; } }

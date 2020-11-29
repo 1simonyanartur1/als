@@ -301,6 +301,9 @@
 	color: #17A9A3
 	line-height: 2
 	font-size: 15px
+	@include mq($max-width: 575px)
+		font-size: 10px
+		line-height: 1.6
 .checkbox
 	@include mq($max-width: 575px)
 		font-size: 11px !important
@@ -353,3 +356,78 @@
 		transform: translate(160%, 160%)
 	75%
 		transform: translate(0, 160%)
+
+
+.form-thanks
+	max-width: 100%
+	width: 100%
+	padding: 75px
+	color: #066460
+	position: relative
+	z-index: 2
+	margin: 50px 0
+	@include mq($max-width: 1700px)
+		padding: 60px
+	@include mq($max-width: 1200px)
+		max-width: 95%
+		margin: 50px auto
+	@include mq($max-width: 700px)
+		padding: 15px
+	&:before
+		content: ''
+		display: block
+		background: #17A9A3
+		left: -20px
+		right: 20px
+		top: -20px
+		bottom: 20px
+		position: absolute
+		z-index: -2
+		@include mq($max-width: 1200px)
+			left: -10px
+			top: -10px
+			right: 10px
+			bottom: 10px
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+		background: #DCF2F1
+		z-index: -1
+	&__title
+		font-weight: 300
+		font-size: 60px
+		line-height: 1.2
+		text-transform: uppercase
+		margin-bottom: 20px
+		@include mq($max-width: 1700px)
+			font-size: 40px
+		@include mq($max-width: 700px)
+			font-size: 30px
+			margin-bottom: 10px
+		@include mq($max-width: 370px)
+			font-size: 22px
+		&:after
+			content: ''
+			display: inline-block
+			width: 89px
+			height: 44px
+			background: url("../img/icons/send-mail.svg") no-repeat center center / contain
+			margin-left: 40px
+			@include mq($max-width: 1700px)
+				margin-left: 20px
+				width: 69px
+				height: 32px
+			@include mq($max-width: 700px)
+				display: none
+	&__subtitle
+		font-size: 30px
+		font-weight: 400
+		@include mq($max-width: 1700px)
+			font-size: 24px
+		@include mq($max-width: 700px)
+			font-size: 16px

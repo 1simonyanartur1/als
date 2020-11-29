@@ -37,54 +37,44 @@
 			$(this).find('.lang-list').slideToggle();
 		});
 
-		function showSearch() {
-			$('.header .search').addClass('active');
-			$('.header .tels').addClass('hide');
-		}
-		function hideSearch() {
-			$('.header .tels').removeClass('hide');
-			$('.header .search').removeClass('active');
+		if($(window).innerWidth() > 1200) {
+			function showSearch() {
+				$('.header .search').addClass('active');
+				$('.header .tels').addClass('hide');
+			}
+			function hideSearch() {
+				$('.header .tels').removeClass('hide');
+				$('.header .search').removeClass('active');
+			}
+			$(document).on('mouseover', '.header .search', function() {
+				showSearch();
+			});
+			$(document).on('mouseout', '.header .search', function() {
+				if($(this).find('input').is(':focus')) {
+					// если уводим мылшку и он в фокусе
+				} else {
+					// если уводим мылшку и он не в фокусе
+					hideSearch();
+				}
+			});
+	
+			$('.header .search input').focus(function() {
+				showSearch();
+			});
+			$('.header .search input').blur(function() {
+				hideSearch();
+			});
+
 		}
 
 		$('.form__input').blur(function() {
 			if($(this).val() != 0) {
-				console.log('1');
 				$(this).next('.form__label').css('display','none');
 			} else {
-				console.log('2');
 			}
 		});
 
-		$(document).on('mouseover', '.header .search', function() {
-			showSearch();
-		});
-		$(document).on('mouseout', '.header .search', function() {
-			if($(this).find('input').is(':focus')) {
-				// если уводим мылшку и он в фокусе
-			} else {
-				// если уводим мылшку и он не в фокусе
-				hideSearch();
-			}
-		});
-
-		$('.header .search input').focus(function() {
-			showSearch();
-		});
-		$('.header .search input').blur(function() {
-			hideSearch();
-		});
 		
-		
-
-		// $(document).on('click', '.form__label', function() {
-		// 	$(this).addClass('hide');
-		// });
-		// $(document).on('focus', '.form__input', function() {
-		// 	$(this).parent('.form-item').find('.form__label').addClass('hide');
-		// });
-		// $(document).on('blur', '.form__input', function() {
-		// 	$(this).parent('.form-item').find('.form__label').removeClass('hide');
-		// });
 
 		$(document).on('click', '.competitions .btns a', function (e) {
 			e.preventDefault();
