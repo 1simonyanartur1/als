@@ -22,12 +22,14 @@
 					width: 130px
 				@include mq($max-width: 700px)
 					width: 75px
+				@include mq($max-width: 370px)
+					width: 60px
 			&__text
 				font-size: 16px
 		.right-bottom
 			padding-top: 10px
 			@include mq($max-width: 1000px)
-				padding-top: 5px
+				padding-top: 0
 	.container
 		display: flex
 		justify-content: space-between
@@ -54,6 +56,8 @@
 				width: 130px
 			@include mq($max-width: 700px)
 				width: 75px
+			@include mq($max-width: 370px)
+				width: 60px
 		&__text
 			font-size: 18px
 			transition: all .3s ease-out
@@ -76,27 +80,30 @@
 		@include mq($max-width: 700px)
 			width: calc( 100% - 85px )
 			display: flex
-			justify-content: space-between
+			justify-content: flex-end
 		@include mq($max-width: 370px)
 			width: calc( 100% - 65px )
-		// 	flex-direction: column
 	.right-top
 		display: flex
 		align-items: center
 		justify-content: space-between
+		@include mq($max-width: 1200px)
+			padding-bottom: 5px
+		@include mq($max-width: 700px)
+			padding-bottom: 0
 		&-block
 			display: flex
 			align-items: center
 			margin-left: 40px
 			@include mq($max-width: 1200px)
 				margin-left: auto
-			@include mq($max-width: 575px)
-				flex-direction: column
 	.tels
 		margin-left: auto
 		margin-right: auto
+		@include mq($max-width: 1200px)
+			margin-right: 10px
 		@include mq($max-width: 575px)
-			margin-bottom: 5px
+			margin-right: 5px
 		&.hide
 			opacity: 0
 		a
@@ -104,12 +111,17 @@
 			font-size: 17px
 			@include mq($max-width: 575px)
 				font-size: 14px
+			@include mq($max-width: 370px)
+				font-size: 12px
 			&:hover
 				color: $green2
 	.links
 		display: flex
 		align-items: center
-		@include mq($max-width: 575px)
+		@include mq($max-width: 1200px)
+			margin-left: 0px
+			margin-right: 0px
+		@include mq($max-width: 400px)
 			display: none
 		li
 			position: relative
@@ -145,6 +157,7 @@
 				margin-left: 0
 				font-size: 19px
 			@include mq($max-width: 575px)
+				font-size: 17px
 		span
 			@include mq($max-width: 1200px)
 				display: none
@@ -159,9 +172,7 @@
 		@include mq($max-width: 1200px)
 			padding-top: 15px
 		@include mq($max-width: 1000px)
-			padding-top: 5px
-		@include mq($max-width: 370px)
-			// flex-direction: column
+			padding-top: 0
 	.menu
 		display: flex
 		align-items: center
@@ -176,13 +187,13 @@
 			width: 100%
 			padding: 10px
 			background: $green4
-			height: calc( 100vh - 55px )
+			height: calc( 100vh - 46px )
 			&.active
-				top: 55px
-		@include mq($max-width: 575px)
-			height: calc( 100vh - 63px )
+				top: 46px
+		@include mq($max-width: 370px)
+			height: calc( 100vh - 44px )
 			&.active
-				top: 63px
+				top: 44px
 		li
 			&:not(:last-child)
 				margin-right: 27px
@@ -207,8 +218,8 @@
 	.lang
 		text-transform: uppercase
 		position: relative
-		@include mq($max-width: 370px)
-			margin-left: auto
+		@include mq($max-width: 575px)
+			margin-left: 5px
 		&__curr
 			cursor: pointer
 			letter-spacing: 0.1em
@@ -218,6 +229,9 @@
 			flex-direction: row-reverse
 			font-weight: 700
 			transition: all .3s ease-out
+			line-height: 1
+			@include mq($max-width: 575px)
+				font-size: 15px
 			@include mq($max-width: 370px)
 				font-size: 12px
 			&:hover
@@ -242,6 +256,9 @@
 				line-height: 1.2
 				letter-spacing: 0.1em
 				font-size: 16px
+				@include mq($max-width: 575px)
+					line-height: 1.4
+					font-size: 14px
 				@include mq($max-width: 370px)
 					font-size: 10px
 				&:hover
@@ -265,16 +282,19 @@
 		margin-right: 10px
 		margin-left: 40px
 		@include mq($max-width: 1200px)
-			margin-right: 25px
-			margin-left: 25px
-		@include mq($max-width: 800px)
-			margin-right: 5px
-			margin-left: 5px
+			margin-right: 0px
+			margin-left: 0px
 		&.active
 			input
 				border: 1px solid $green3
 				padding: 0 40px 0 15px
 				width: 250px
+				@include mq($max-width: 800px)
+					width: 200px
+				@include mq($max-width: 575px)
+					width: 170px
+				@include mq($max-width: 370px)
+					width: 130px
 		input
 			position: absolute
 			right: 0
@@ -291,17 +311,10 @@
 			color: $white
 			transition: all .3s ease-out
 			@include mq($max-width: 1200px)
-				border: 1px solid $green3
-				padding: 0 35px 0 5px
-				width: 200px
-				position: static
 				height: 24px
 				font-size: 13px
 			@include mq($max-width: 800px)
-				width: 150px
 				font-size: 12px
-			@include mq($max-width: 575px)
-				width: 120px
 			&::placeholder
 				color: $white
 				font-size: 15px
@@ -325,14 +338,12 @@
 			cursor: pointer
 			z-index: 2
 			@include mq($max-width: 1200px)
-				position: absolute
-				right: 0
-				top: 0
 				font-size: 14px
 				height: 24px
-			&:hover
-				color: $white
-				background: $green3
+			@include mq($min-width: 1200px)
+				&:hover
+					color: $white
+					background: $green3
 
 
 

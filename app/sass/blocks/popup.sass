@@ -29,8 +29,8 @@
 					@include mq($max-width: 575px)
 						font-size: 16px
 	@include mq($max-width: 575px)
-		width: 100%
-		margin: 50px 0
+		width: calc( 100% - 30px )
+		margin: 50px 15px
 		padding: 15px
 	.form-link
 		color: $green3
@@ -157,65 +157,52 @@
 		.btn3
 			width: 100%
 
-	&#thanks
-		max-width: 900px
-		width: 100%
-		background: #DCF2F1
-		padding: 85px 95px
-		color: #066460
-		@include mq($max-width: 1700px)
-			padding: 60px
-			max-width: 600px
+.thanks
+	width: 100%
+	background: #DCF2F1
+	color: #066460
+	&:before
+		content: ''
+		display: block
+		background: #17A9A3
+		left: -20px
+		right: 20px
+		top: -20px
+		bottom: 20px
+		position: absolute
+		z-index: -1
+		@include mq($max-width: 1200px)
+			left: -10px
+			top: -10px
+			right: 10px
+			bottom: 10px
+	.popup__title
+		font-weight: 300
+		font-size: 40px
+		line-height: 1.2
+		text-transform: uppercase
+		margin-bottom: 10px
 		@include mq($max-width: 700px)
-			padding: 15px
-			margin: 20px
-			max-width: calc(100% - 40px)
-		&:before
+			font-size: 24px
+		@include mq($max-width: 370px)
+			font-size: 22px
+		&:after
 			content: ''
-			display: block
-			background: #17A9A3
-			left: -20px
-			right: 20px
-			top: -20px
-			bottom: 20px
-			position: absolute
-			z-index: -1
-			@include mq($max-width: 1200px)
-				left: -10px
-				top: -10px
-				right: 10px
-				bottom: 10px
-		.popup__title
-			font-weight: 300
-			font-size: 60px
-			line-height: 1.2
-			text-transform: uppercase
-			margin-bottom: 20px
-			@include mq($max-width: 1700px)
-				font-size: 40px
+			display: inline-block
+			width: 69px
+			height: 32px
+			margin-left: 20px
+			background: url("../img/icons/send-mail.svg") no-repeat center center / contain
 			@include mq($max-width: 700px)
-				font-size: 30px
-				margin-bottom: 10px
+				width: 49px
+				height: 22px
 			@include mq($max-width: 370px)
-				font-size: 22px
-			&:after
-				content: ''
-				display: inline-block
-				width: 89px
-				height: 44px
-				background: url("../img/icons/send-mail.svg") no-repeat center center / contain
-				margin-left: 40px
-				@include mq($max-width: 1700px)
-					margin-left: 20px
-					width: 69px
-					height: 32px
-				@include mq($max-width: 700px)
-					display: none
-		.popup__subtitle
-			font-size: 30px
-			font-weight: 400
-			@include mq($max-width: 1700px)
-				font-size: 24px
-			@include mq($max-width: 700px)
-				font-size: 16px
+				display: none
+	.popup__subtitle
+		font-size: 20px
+		font-weight: 400
+		@include mq($max-width: 1700px)
+			font-size: 24px
+		@include mq($max-width: 700px)
+			font-size: 16px
 

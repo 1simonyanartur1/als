@@ -1,7 +1,5 @@
 (function ($) {
-	$('.information').attr('id', 'information');
-	$('.service').attr('id', 'service');
-	$('.load').show();
+	$('.load-wrap').show();
 	$(document).ready(function () {
 
 		$('.load-wrap').fadeOut('slow');
@@ -37,44 +35,63 @@
 			$(this).find('.lang-list').slideToggle();
 		});
 
-		if($(window).innerWidth() > 1200) {
-			function showSearch() {
-				$('.header .search').addClass('active');
-				$('.header .tels').addClass('hide');
-			}
-			function hideSearch() {
-				$('.header .tels').removeClass('hide');
-				$('.header .search').removeClass('active');
-			}
-			$(document).on('mouseover', '.header .search', function() {
+		function showSearch() {
+			$('.header .search').addClass('active');
+			$('.header .tels').addClass('hide');
+		}
+		function hideSearch() {
+			$('.header .tels').removeClass('hide');
+			$('.header .search').removeClass('active');
+		}
+		if ($(window).innerWidth() > 1200) {
+			$(document).on('mouseover', '.header .search', function () {
 				showSearch();
 			});
-			$(document).on('mouseout', '.header .search', function() {
-				if($(this).find('input').is(':focus')) {
-					// если уводим мылшку и он в фокусе
+			$(document).on('mouseout', '.header .search', function () {
+				if ($(this).find('input').is(':focus')) {
+					// если уводим мышку и он в фокусе
 				} else {
-					// если уводим мылшку и он не в фокусе
+					// если уводим мышку и он не в фокусе
 					hideSearch();
 				}
 			});
-	
-			$('.header .search input').focus(function() {
+			$('.header .search input').focus(function () {
 				showSearch();
 			});
-			$('.header .search input').blur(function() {
+			$('.header .search input').blur(function () {
 				hideSearch();
 			});
-
+		} else {
+			$('.search button').addClass('firstClick');
+			$('.search button').on('click', function(e) {
+				if($(this).hasClass('firstClick')) {
+					e.preventDefault();
+				} else {
+					
+				}
+				if($('.header .search').hasClass('active')) {
+					hideSearch();
+				} else {
+					showSearch();
+				}
+			});
+			$('.search input').on('keyup', function () { 
+				if ($(this).val() != 0) {
+					console.log('1');
+					$('.search button').removeClass('firstClick');
+				} else {
+					$('.search button').addClass('firstClick');
+				}
+			})
 		}
 
-		$('.form__input').blur(function() {
-			if($(this).val() != 0) {
-				$(this).next('.form__label').css('display','none');
-			} else {
-			}
+		$('.form__input').blur(function () {
+			if ($(this).val() != 0) {
+				$(this).next('.form__label').css('display', 'none');
+			} else {}
 		});
 
-		
+
 
 		$(document).on('click', '.competitions .btns a', function (e) {
 			e.preventDefault();
@@ -173,14 +190,14 @@
 		$('.spoiler-list').hide();
 		$(document).on('click', '.spoiler__title', function (e) {
 			$(this).toggleClass('active');
-			if($(this).hasClass('active')) {
+			if ($(this).hasClass('active')) {
 				// $(this).next('.spoiler-list').slideToggle();
 			} else {
 
 			}
 		});
 
-		
+
 		// $('.information-menu li').each(function (e) {
 		// 	var $href = '#information';
 		// 	$(this).find('a').attr('href', $(this).find('a').attr('href') + $href);
@@ -200,12 +217,12 @@
 		// 	$('.information-menu a').removeClass('active');
 		// 	$(this).addClass('active');
 
-			// $('.information .text-container').each(function (e) {
-			// 	if ($(this).data('id') == tab) {
-			// 		$('.information .text-container').hide();
-			// 		$(this).show();
-			// 	}
-			// });
+		// $('.information .text-container').each(function (e) {
+		// 	if ($(this).data('id') == tab) {
+		// 		$('.information .text-container').hide();
+		// 		$(this).show();
+		// 	}
+		// });
 		// });
 
 		$('.map-block').on('mouseover', function () {

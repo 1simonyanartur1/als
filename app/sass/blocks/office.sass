@@ -1,6 +1,6 @@
 .office
 	padding: 80px 0 0
-	@include mq($max-width: 700px)
+	@include mq($max-width: 800px)
 		padding: 40px 0 0
 	.caption
 		&__title
@@ -39,7 +39,7 @@
 		display: block
 		width: 100%
 		height: auto
-		@include mq($max-width: 700px)
+		@include mq($max-width: 800px)
 			display: none
 	.bottom
 		position: relative
@@ -48,18 +48,18 @@
 		margin-right: auto
 		@include mq($max-width: 1200px)
 			width: 100%
-		@include mq($max-width: 700px)
+		@include mq($max-width: 800px)
 			display: flex
 			flex-wrap: wrap
 	.map-block
 		position: absolute
 		z-index: 1
 		cursor: pointer
-		@include mq($max-width: 700px)
+		@include mq($max-width: 800px)
 			position: static
 			width: 48%
 			margin: 1% 1% 35px
-		@include mq($max-width: 400px)
+		@include mq($max-width: 450px)
 			width: 100%
 		&.active
 			.map-block-inner
@@ -67,11 +67,15 @@
 		&.rus
 			right: 30%
 			top: 25%
-			@include mq($max-width: 1200px)
-				right: 15%
+			@include mq($max-width: 1300px)
+				right: 20%
+				top: 15%
 		&.ger
 			right: 43%
 			top: 28%
+			@include mq($max-width: 1300px)
+				right: 37%
+				top: 23%
 			@include mq($max-width: 1200px)
 				right: 35%
 		&.usa
@@ -80,15 +84,19 @@
 		&__title
 			color: $green4
 			font-size: 30px
-			font-weight: 700
+			font-weight: 800
 			margin-bottom: 15px
 			position: relative
-			@include mq($max-width: 575px)
+			@include mq($max-width: 1800px)
 				font-size: 22px
+			@include mq($max-width: 575px)
+				font-size: 20px
 			&:before
 				color: $green4
 				font-size: 35px
 				margin-right: 10px
+				@include mq($max-width: 1800px)
+					font-size: 25px
 				@include mq($max-width: 575px)
 					font-size: 25px
 		&-inner
@@ -97,13 +105,17 @@
 			padding: 5px
 			width: 325px
 			display: none
-			@include mq($max-width: 700px)
+			@include mq($max-width: 1800px)
+				width: 275px
+			@include mq($max-width: 800px)
 				position: static
 				display: block
 			a
 				color: $green4
 				font-size: 21px
-				font-weight: 700
+				font-weight: 800
+				@include mq($max-width: 1800px)
+					font-size: 17px
 				@include mq($max-width: 575px)
 					font-size: 16px
 		.tels
@@ -119,6 +131,8 @@
 				position: absolute
 				left: 2px
 				top: 0
+				@include mq($max-width: 1800px)
+					font-size: 16px
 				@include mq($max-width: 575px)
 					font-size: 14px
 			li
@@ -140,6 +154,8 @@
 				position: absolute
 				left: 0
 				top: 2px
+				@include mq($max-width: 1800px)
+					font-size: 14px
 				@include mq($max-width: 575px)
 					font-size: 12px
 			li

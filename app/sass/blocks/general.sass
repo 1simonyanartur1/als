@@ -138,9 +138,6 @@
 			a
 				min-width: 205px
 				padding: 15px
-				width: 100%
-				@include mq($max-width: 575px)
-					width: 100%
 	&__bgtitle
 		white-space: nowrap
 		user-select: none
@@ -240,8 +237,8 @@
 	text-align: right
 
 .burger
-	width: 30px
-	height: 30px
+	width: 20px
+	height: 20px
 	position: relative
 	cursor: pointer
 	background: transparent
@@ -252,41 +249,31 @@
 
 	.bar 
 		padding: 0
-		width: 30px
+		width: 20px
 		height: 2px
 		display: block
 		background: $white
 		transition: all 0.3s ease-in-out
 		position: absolute 
-
 	.bar 
 		transition: all 0.3s ease-in-out
-
 	.bar1 
 		top: 0
-
 	.bar2 
-		top: 12px
-
+		top: 8px
 	.bar3 
-		top: 24px
-
+		top: 17px
 	&.active 
-
 		.bar1 
 			top: 13.5px
 			background-color: transparent
-
 		.bar2 
 			left: 0px
-			width: 30px
 			transform: rotate(45deg)
-			top: 12px
-
+			top: 8px
 		.bar3 
 			left: 0
-			width: 30px
-			top: 12px
+			top: 8px
 			transform: rotate(-45deg)
 
 .error

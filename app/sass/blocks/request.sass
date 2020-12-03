@@ -108,6 +108,9 @@
 					text-transform: none !important
 					@include mq($max-width: 700px)
 						font-size: 24px !important
+						line-height: 1 !important
+					@include mq($max-width: 575px)
+						font-size: 18px !important
 	.form
 		display: flex
 		flex-wrap: wrap
@@ -184,6 +187,7 @@
 				margin-top: 30px
 			@include mq($max-width: 575px)
 				margin-top: 10px
+				width: 85%
 		.checkbox
 			&__mark
 				color: $black

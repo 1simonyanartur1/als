@@ -25,6 +25,9 @@
 		z-index: 4
 		display: block
 		width: 28%
+		@include mq($max-width: 1800px)
+			width: 27%
+			right: -6%
 		@include mq($max-width: 1200px)
 			display: none
 	.line2
